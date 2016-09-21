@@ -1,0 +1,42 @@
+body {
+        background-color: #3bb7bf;
+        color:white;
+        font-size: 100px;
+        line-height: 100px;
+        letter-spacing: -5px;
+        font-family: Helvetica, Arial, sans-serif;
+}
+p {
+        color: red;
+        background-color: yellow;
+        width: 400px;
+        overflow: hidden;
+        text-decoration:overline;
+}
+
+.special {
+        background-color: purple;
+        color: white;
+}
+
+.myheader {
+        color:blue;
+        font-size:50px;
+}
+
+
+
+.ontop {
+        position: fixed;
+        top: 0;
+        right:0;
+        margin: 0;
+        padding:60px;
+        border: 10px solid red;
+}
+
+a {
+        color:red;
+        text-decoration: none;
+}
+

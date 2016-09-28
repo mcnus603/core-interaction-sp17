@@ -1,22 +1,26 @@
 h1 {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 200px 
+    font-size: 72px; 
+    position:absolute;
+    top:0px;
+    left:120px;
 }
-.rectangle {
-    width:200px;
-    height:100px;
-    background:#F46285;
-    position: fixed;
-    top:20px;
-    right:20px;
+#circle1 {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    border-radius: 500px;
 }
-.circle {
-    background-color: blue;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    top: 20px;
-    right: 100px;
-    border-radius: 50px;
-    
+
+ul {
+    font-family: Helvetica, Arial, sans-serif;
+    color:white;
+    font-size:24px;
+    position: absolute;
+    left:225px;
+    top:200px;
+}
     

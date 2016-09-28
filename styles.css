@@ -1,0 +1,22 @@
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 200px 
+}
+.rectangle {
+    width:200px;
+    height:100px;
+    background:#F46285;
+    position: fixed;
+    top:20px;
+    right:20px;
+}
+.circle {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    border-radius: 50px;
+    
+    

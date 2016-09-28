@@ -1,0 +1,62 @@
+
+#box {
+    width:200px;
+    height:200px;
+    background-color:purple;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+#stripe1 {
+    width: 2000px;
+    height: 10px;
+    background-color: black;
+    position: fixed;
+    top: 50px;
+    right:0px;
+}
+
+#stripe2 {
+    width: 2000px;
+    height: 10px;
+    background-color: black;
+    position: fixed;
+    top: 70px;
+    right:0px;
+    }
+#stripe3 {
+     width: 2000px;
+    height: 10px;
+    background-color: black;
+    position: fixed;
+    top: 90px;
+    right:0px;
+}
+
+#stripe4 {
+    width: 2000px;
+    height: 10px;
+    background-color: black;
+    position: fixed;
+    top: 110px;
+    right:0px;
+}
+
+#stripe5 {
+    width: 2000px;
+    height: 10px;
+    background-color: black;
+    position: fixed;
+    top: 130px;
+    right:0px;
+}
+
+#stripe6 {
+    width: 2000px;
+    height: 10px;
+    background-color: black;
+    position: fixed;
+    top: 150px;
+    right:0px;
+}

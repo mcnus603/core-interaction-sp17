@@ -1,0 +1,504 @@
+.square1 {
+    width: 100px;
+    height: 400px;
+    background-color: #845B7F;
+    float: right;
+    z-index:100;
+    opacity: .1;
+    margin-right: 400px;
+    padding-top: 0px;
+}
+
+.square2{
+    width: 200px;
+    height: 200px;
+    background-color:white;
+    opacity:.2;
+    float:left;
+    margin-top: 150px;
+
+ 
+    
+}
+
+.masterbox {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+.r1 {
+    top: 0px;
+}
+
+.r2 {
+    top: 150px;
+}
+
+.r3 {
+    top: 300px;
+}
+
+.r4 {
+    top: 450px;
+}
+
+.r5 {
+    top: 600px;
+}
+
+.r6 {
+    top: 750px;
+}
+
+.r7 {
+    top: 900px;
+}
+
+.c1 {
+    left: 0px;
+}
+
+.c2 {
+    left: 150px;
+}
+
+.c3 {
+    left: 300px;
+}
+
+.c4 {
+    left: 450px;
+}
+
+.c5 {
+    left: 600px;
+}
+
+.c6 {
+    left: 750px;
+}
+
+.c7 {
+    left: 900px;
+}
+ 
+
+
+.box1 {
+    background-color:#DCD2FF;
+}
+
+
+.box2 {
+    background-color:#D0C9F2;
+}
+
+
+.box3 {
+    background-color:#C7C1E5;
+}
+
+.box4 {
+    background-color:#BAB4D6;
+}
+
+.box5 {
+    background-color:#ADA8C6;
+}
+
+.box6 {
+    background-color:#A5A0BA;
+}
+
+.box7 {
+    background-color:#9894AA;
+}
+
+
+
+
+.box8 {
+    background-color:#E1D4FF;
+    
+}
+
+.box9 {
+    background-color:#D8D0F4;
+}
+
+.box10 {
+    background-color:#CFCAE8;
+}
+
+.box11 {
+    background-color:#C7C3DD;
+}
+
+.box12 {
+    background-color:#C0BCD3;
+}
+
+.box13 {
+    background-color:#B8B5C9;
+}
+
+.box14 {
+    background-color:#AFACBC;
+}
+
+
+
+
+
+.box15 {
+    background-color:#E9D4FF;
+}
+
+.box16 {
+    background-color:#E0D0F4;
+}
+
+.box17 {
+    background-color:#D6CAE8;
+}
+
+.box18 {
+    background-color:#CDC3DD;
+}
+
+.box19 {
+    background-color:#C5BCD3;
+}
+
+.box20 {
+    background-color:#B9B0C6;
+}
+
+.box21 {
+    background-color:#ABA3B7;
+}
+
+
+
+
+
+
+
+.box22 {
+    background-color:#EFD4FF;
+}
+
+.box23 {
+    background-color:#E3CEF2;
+}
+
+.box24 {
+    background-color:#D9C5E8;
+}
+
+.box25 {
+    background-color:#D0BFDD;
+}
+
+.box26 {
+    background-color:#C7B8D3;
+}
+
+.box27 {
+    background-color:#C0B1C9;
+}
+
+.box28 {
+    background-color:#B6AABF;
+}
+
+
+
+
+
+.box29 {
+    background-color:#FBD4FF;
+}
+
+.box30 {
+    background-color:#EFD0F4;
+}
+
+.box31 {
+    background-color:#E6CAEA;
+}
+
+.box32 {
+    background-color:#DCC3E0;
+}
+
+.box33 {
+    background-color:#D3BDD6;
+}
+
+.box34 {
+    background-color:#C9B6CC;
+}
+
+.box35 {
+    background-color:#BFAEC1;
+}
+
+
+
+
+.box36 {
+    background-color:#FFD4F2;
+}
+
+.box37 {
+    background-color:#F4D0EA;
+}
+
+.box38 {
+    background-color:#E8CAE1;
+}
+
+.box39 {
+    background-color:#DDC3D7;
+}
+
+.box40 {
+    background-color:#D3BCCD;
+}
+
+.box41 {
+    background-color:#C6B3C1;
+}
+
+.box42 {
+    background-color:#BAAAB6;
+}
+
+
+
+
+.box43 {
+    background-color:#FFD4E5;
+}
+
+.box44 {
+    background-color:#F4D0DE;
+}
+
+.box45 {
+    background-color:#E8CAD6;
+}
+
+.box46 {
+    background-color:#DBC1CC;
+}
+
+.box47 {
+    background-color:#CEB7C0;
+}
+
+.box48 {
+    background-color:#C4B1B8;
+}
+
+.box49 {
+    background-color:#B5A5AC;
+}
+
+
+.box1:hover {
+    background-color: #D7FBF2;
+}
+
+.box2:hover {
+    background-color: #C2F8EC;
+}
+
+.box3:hover {
+    background-color: #AEF6E5;
+}
+
+.box4:hover {
+    background-color: #9AF4DF;
+}
+
+.box5:hover {
+    background-color: #83C9B7;
+}
+
+.box6:hover {
+    background-color: #73B7A7;
+}
+
+.box7:hover {
+    background-color: #59897E;
+}
+
+.box8:hover {
+    background-color: #B5E9F7;
+}
+
+.box9:hover {
+    background-color: #A1D6E2;
+}
+
+.box10:hover {
+    background-color: #90CAD3;
+}
+
+.box11:hover {
+    background-color: #7BB5BF;
+}
+
+.box12:hover {
+    background-color: #68A1AA;
+}
+
+.box13:hover {
+    background-color: #5A929B;
+}
+
+.box14:hover {
+    background-color: #497C84;
+}
+
+.box15:hover {
+    background-color: #B5D4F4;
+}
+
+.box16:hover {
+    background-color: #A4C4E0;
+}
+
+.box17:hover {
+    background-color: #93B2CE;
+}
+
+.box18:hover {
+    background-color: #7D9DBA;
+}
+
+.box19:hover {
+    background-color: #6C8CA8;
+}
+
+.box20:hover {
+    background-color: #5C7A96;
+}
+
+.box21:hover {
+    background-color: #4E6C87;
+}
+
+.box22:hover {
+    background-color: #8BBAE8;
+}
+
+.box23:hover {
+    background-color: #79A9D8;
+}
+
+.box24:hover {
+    background-color: #6B9AC9;
+}
+
+.box25:hover {
+    background-color: #5888B7;
+}
+
+.box26:hover {
+    background-color: #4776A5;
+}
+
+.box27:hover {
+    background-color: #386593;
+}
+
+.box28:hover {
+    background-color: #2B557F;
+}
+
+.box29:hover {
+    background-color: #89A6E5;
+}
+
+.box30:hover {
+    background-color: #7B97D6;
+}
+
+.box31:hover {
+    background-color: #6E8BCC;
+}
+
+.box32:hover {
+    background-color: #617DBC;
+}
+
+.box33:hover {
+    background-color: #526DAA;
+}
+
+.box34:hover {
+    background-color: #445D96;
+}
+
+.box35:hover {
+    background-color: #385084;
+}
+
+.box36:hover {
+    background-color: #8897E2;
+}
+
+.box37:hover {
+    background-color: #7C8ED1;
+}
+
+.box38:hover {
+    background-color: #6C7EC1;
+}
+
+.box39:hover {
+    background-color: #5D6FAF;
+}
+
+.box40:hover {
+    background-color: #4F609E;
+}
+
+.box41:hover {
+    background-color: #42528C;
+}
+
+.box42:hover {
+    background-color: #35437A;
+}
+
+.box43:hover {
+    background-color: #928ADD;
+}
+
+.box44:hover {
+    background-color: #827ACE;
+}
+
+.box45:hover {
+    background-color: #726ABF;
+}
+
+.box46:hover {
+    background-color: #655DB2;
+}
+
+.box47:hover {
+    background-color: #5850A3;
+}
+
+.box48:hover {
+    background-color: #4A4293;
+}
+
+.box49:hover {
+    background-color: #3B347F;
+}

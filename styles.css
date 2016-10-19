@@ -1,26 +1,142 @@
-h1 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 72px; 
-    position:absolute;
-    top:0px;
-    left:120px;
+body{
+    font-family: "Helvetica";
 }
-#circle1 {
-    background-color: black;
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top: 130px;
-    left: 100px;
-    border-radius: 500px;
+.grid {
+	margin-top: 0;
+	margin-left: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 100%;
+	display: inline-block;
 }
 
-ul {
-    font-family: Helvetica, Arial, sans-serif;
-    color:white;
-    font-size:24px;
-    position: absolute;
-    left:225px;
-    top:200px;
+
+.grid li {
+	position: relative;
+	float: left;
+	font-size: 40px;
+	line-height: 1.5;
+	max-height: 1000px;
+	text-align: center;
+	vertical-align: middle;
+    width: 3%;
+	/* Fallback */
+	width: calc(100% /4);
+	height:calc(100%/2);
+	
 }
-    
+
+.grid li span {
+	display: inline-block;
+	font-weight: 900;
+	line-height: 1;
+	position: relative;
+	color: hsla(0, 0%, 0%, 0.6);
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 550px;
+	-ms-perspective: 550px;
+	perspective: 550px;
+	z-index: 1;
+}
+
+grid li span:before,
+.grid li span:after {
+	position: absolute;
+	content: attr(data-letter);
+	line-height: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+grid li span:before {
+	text-shadow: none;
+	color: hsla(0, 0%, 0%, 0.12);
+}
+
+
+
+
+
+
+
+
+
+.title {
+      background-color: #023945;
+      color: white;
+      font-size:100px;
+}
+
+.letter1 {
+    background-color: #fff0ec;
+}
+
+.letter2 {
+    background-color: #fab6a4;
+    vertical-align: relative;
+}
+
+.letter3{
+    background-color: #f68668;
+}
+.letter4 {
+    background-color: #fff0ec;
+}
+
+.letter5 {
+    background-color: #f46842;
+}
+
+.letter6{
+    background-color: #f68668;
+}
+.letter7 {
+    background-color: #fff0ec;
+}
+.letter8 {
+    background-color: #fab6a4;
+}
+
+.letter9 {
+    background-color: #f68668;
+}
+
+.letter10{
+    background-color: #fff0ec;
+}
+.letter11 {
+    background-color: #f46842;
+
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #023945;
+    float: left;
+}
+
+
+
+
+.letter2:hover {
+	background-color: #023945;
+}
+.letter5:hover {
+	background-color: #023945;
+}
+.letter7:hover {
+	background-color: #023945;
+}
+.letter8:hover {
+	background-color: #023945;
+}
+.letter10:hover {
+	background-color: #023945;
+}

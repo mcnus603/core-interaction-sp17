@@ -1,0 +1,72 @@
+.mybutton {
+    background-image: url(sprite.png);
+    width:200px;
+    height:200px;
+    display:block;
+}
+.mybutton:hover {
+    width:200px;
+    height:200px;
+    background-position: -200px;
+}
+
+.mybutton:active {
+    background-position: -400px
+}
+
+body {
+    margin:0px;
+}
+
+.fullwidth {
+    margin-bottom:100px;
+    width:70%;
+    background-color:blue;
+    height:40px;
+    margin:10 auto;
+}
+
+.stage {
+    width:200px;
+    height:400px;
+    background-color:yellow;
+    position: relative;
+  
+}
+
+.box {
+    width: 100px;
+    height: 60px;
+    background-color:red;
+    position:absolute;
+    bottom:40px;
+    right:20px;
+}
+
+.circle {
+    width:200px;
+    height:200px;
+    background:black;
+    border-radius:100%;
+}
+
+.triangle {
+    
+ width: 0px;
+ border:100px solid transparent;
+ border-top: 200px solid green;
+ 
+    
+}
+
+.b {
+    width: 200px;
+    height: 200px;
+    position:absolute;
+}
+
+.c1 {
+    top:20px;
+    left:20px;
+    background-color:lime;
+}

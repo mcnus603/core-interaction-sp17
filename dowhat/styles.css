@@ -1,0 +1,38 @@
+ol {
+   font-family: "Helvetica";
+   width: 400px;
+    font-weight: lighter;
+    font-size: 14px;
+    position: absolute;
+    left:350px;
+}
+
+.pic1 {
+    width:300px;
+    position: absolute;
+    left:20px;
+    top:50px;
+}
+.pic2 {
+    width:300px;
+    position: absolute;
+    left:20px;
+    top:200px;
+}
+.pic3 {
+    width:300px;
+    position: absolute;
+    left:20px;
+    top:350px;
+}
+.pic4 {
+    width:300px;
+    position: absolute;
+    left:20px;
+    top:500px;
+   
+}
+
+
+
+  

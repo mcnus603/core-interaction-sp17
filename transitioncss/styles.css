@@ -1,0 +1,28 @@
+.clock {
+   width: 200px;
+   height:200px;
+   background-color:yellow;
+   border-radius:100%;
+   position:relative;
+   animation-name:myclock;
+   animation-duration:60s;
+   animation-iteration-count:infinite;
+
+}
+
+.seconds {
+    width:100px;
+    height:4px;
+    background-color:black;
+    position:absolute;
+    top:98px;
+}
+
+@keyframes myclock {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(360deg);  
+    }
+}

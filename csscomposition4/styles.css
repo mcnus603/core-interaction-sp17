@@ -1,0 +1,308 @@
+.grouppic {
+    width:600px;
+    height:600px;
+    padding-left: 80px;
+    padding-top: 10px;
+  
+    
+}
+
+.pic {
+    height: 100px;
+    width: 100px;
+    float: left;
+   margin: 5px;
+}
+
+.graph {
+    width:850px;
+    padding-top: 10px;
+    padding-left:40px;
+}
+
+.nyc1 {
+    background-image:url("sized/nyc1.jpg");
+
+}
+.nyc2 {
+    background-image:url("sized/nyc2.jpg");
+}
+.nyc3 {
+    background-image:url("sized/nyc3.jpg");
+}
+.nyc4 {
+    background-image:url("sized/nyc4.jpg");
+}
+
+.nyc5 {
+    background-image:url("sized/nyc5.jpg");
+}
+.nyc6 {
+    background-image:url("sized/nyc6.jpg");
+}
+.nyc7 {
+    background-image:url("sized/nyc7.jpg");
+}
+.nyc8 {
+    background-image:url("sized/nyc8.jpg");
+}
+.nyc9 {
+    background-image:url("sized/nyc9.jpg");
+}
+.nyc10 {
+    background-image:url("sized/nyc10.jpg");
+}
+.nyc11 {
+    background-image:url("sized/nyc11.jpg");
+}
+.nyc12 {
+    background-image:url("sized/nyc12.jpg");
+}
+
+.nyc13 {
+    background-image:url("sized/nyc13.jpg");
+}
+.nyc14 {
+    background-image:url("sized/nyc14.jpg");
+}
+.nyc15 {
+    background-image:url("sized/nyc15.jpg");
+}
+.nyc16 {
+    background-image:url("sized/nyc16.jpg");
+}
+
+.nyc17 {
+    background-image:url("sized/nyc17.jpg");
+}
+.nyc18 {
+    background-image:url("sized/nyc18.jpg");
+}
+.nyc19 {
+    background-image:url("sized/nyc19.jpg");
+}
+.nyc20 {
+    background-image:url("sized/nyc20.jpg");
+}
+
+.nyc21 {
+    background-image:url("sized/nyc21.jpg");
+}
+.nyc22 {
+    background-image:url("sized/nyc22.jpg");
+}
+.nyc23 {
+    background-image:url("sized/nyc23.jpg");
+}
+.nyc24 {
+    background-image:url("sized/nyc24.jpg");
+}
+.nyc25 {
+    background-image:url("sized/nyc25.jpg");
+}
+
+
+
+.nyc1:hover {
+    background-image: url("graphs/1.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc2:hover {
+    background-image: url("graphs/2.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc3:hover {
+    background-image: url("graphs/3.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc4:hover {
+    background-image: url("graphs/4.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc5:hover {
+    background-image: url("graphs/5.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc6:hover {
+    background-image: url("graphs/6.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc7:hover {
+    background-image: url("graphs/7.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc8:hover {
+    background-image: url("graphs/8.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc9:hover {
+    background-image: url("graphs/9.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc10:hover {
+    background-image: url("graphs/10.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc11:hover {
+    background-image: url("graphs/12.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc13:hover {
+    background-image: url("graphs/13.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc14:hover {
+    background-image: url("graphs/14.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc15:hover {
+    background-image: url("graphs/15.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc16:hover {
+    background-image: url("graphs/16.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc17:hover {
+    background-image: url("graphs/17.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc18:hover {
+    background-image: url("graphs/18.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc19:hover {
+    background-image: url("graphs/19.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc20:hover {
+    background-image: url("graphs/20.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc21:hover {
+    background-image: url("graphs/21.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc22:hover {
+    background-image: url("graphs/22.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc23:hover {
+    background-image: url("graphs/23.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+
+.nyc24:hover {
+    background-image: url("graphs/24.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}
+.nyc25:hover {
+    background-image: url("graphs/25.jpg");
+    width: 850px;
+    position: absolute;
+    top:40px;
+    left: 40px;
+    z-index: 100;
+}

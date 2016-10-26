@@ -4,6 +4,15 @@
    float: left;
 }
 
+.sc:hover {
+    background-color:#d5d5d9;
+}
+
+.nyc:hover {
+    background-color:#d5d5d9;
+}
+
+
 h2 {
     font-family: "Helvetica";
 }
@@ -46,6 +55,7 @@ p {
     float: left;
     width:calc(100%/5);
     height: calc(100%/5);
+    
 }
 
 .masterbox:hover {
@@ -55,6 +65,9 @@ p {
 
 .b1 {
     background-color: #fedf2f;
+}
+.b1:hover {
+    background-image: url("scpages/scimages/sc1.jpg");
 }
 
 .b2 {
@@ -146,9 +159,6 @@ p {
 .b25 {
     background-color: #655b51;
 }
-
-
-
 
 
 

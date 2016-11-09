@@ -1,0 +1,11 @@
+h1 {
+	font-family: sans-serif;
+	color: red;
+	background-color: green
+}
+
+.active {
+	font-family: Times, serif; 
+	color:black;
+	background-color: yellow;
+}

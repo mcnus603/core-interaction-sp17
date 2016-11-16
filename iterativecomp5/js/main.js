@@ -53,6 +53,7 @@ $(".right").click(function(){
 
 //make a boolean--if clicked = false then do the color randomizine 
 //if clicked = true then bakcground-color =black
+//for a box if background color is black, when its hovered on it stays black adn when its clicked it goes white
 
-
-z
+     
+     

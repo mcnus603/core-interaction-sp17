@@ -29,7 +29,7 @@ for (var i=0; i < 96; i++) {
 
 
 
-//makes it so each book is a color? and where the click functi
+//when moused over, each box different color
 
 $(".box").each(function() {
     $(".box").mouseover(function(){
@@ -38,16 +38,25 @@ $(".box").each(function() {
     });
     
 });
+//when left button clicked, changes the background color
+$(".left").click(function() {
+    var color = hexCode();
+    $("body").css("background-color", color);
+    });
+
+//click for black
 
 $(".box").each(function() {
     $(".box").click(function(){
-    $(this).css("background-color", "black");
+    $(this).css("background-color", "transparent");
     });
     
 });
 
+//restart
 $(".right").click(function(){
     $(".box").css("background-color", "white")
+    $("body").css("background-color", "black")
 })
 
 
@@ -55,5 +64,8 @@ $(".right").click(function(){
 //if clicked = true then bakcground-color =black
 //for a box if background color is black, when its hovered on it stays black adn when its clicked it goes white
 
-     
-     
+//to change the colors back--if using toggle class need of important 
+
+if$.css 
+
+//animation of color for set interval--runs code every x mil sec 

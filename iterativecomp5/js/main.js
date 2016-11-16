@@ -28,7 +28,7 @@ for (var i=0; i < 96; i++) {
 }
 
 
-
+//COLOR
 //when moused over, each box different color
 
 $(".box").each(function() {
@@ -38,13 +38,14 @@ $(".box").each(function() {
     });
     
 });
+//BACKGROUND CLICK CHANGE
 //when left button clicked, changes the background color
 $(".left").click(function() {
     var color = hexCode();
     $("body").css("background-color", color);
     });
 
-//click for black
+//CLICK FOR TRANSPARENT SQUARES
 
 $(".box").each(function() {
     $(".box").click(function(){
@@ -53,15 +54,16 @@ $(".box").each(function() {
     
 });
 
-//restart
+
+//RESTART
 $(".right").click(function(){
-    $(".box").css("background-color", "white")
+    $(".box").css("background-color", "transparent")
     $("body").css("background-color", "black")
 })
 
 
-//make a boolean--if clicked = false then do the color randomizine 
-//if clicked = true then bakcground-color =black
+//make a boolean--if clicked = false then do the color randomizine??
+//if clicked = true then bakcground-color =black???
 //for a box if background color is black, when its hovered on it stays black adn when its clicked it goes white
 
 //to change the colors back--if using toggle class need of important 

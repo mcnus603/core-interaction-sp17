@@ -18,6 +18,16 @@ body{
   transform: translateY(-50%);
 }
 
+.name {
+	font-weight: 600;
+	text-shadow: 
+		1px 4px 6px black, 
+		0 0 0 hsla(0, 0%, 0%, 0.3), 
+		1px 4px 6px black; 
+		opacity: .6;
+
+}
+
 
 .grid li {
 	position: relative;
@@ -164,54 +174,95 @@ grid li span:before {
 
 .letter3 span { 
 	text-shadow: 
-		1px 4px 6px #e74d3c, 
+		1px 4px 6px #f68668, 
 		0 0 0 hsla(0, 0%, 0%, 0.3), 
-		1px 4px 6px #e74d3c; 
+		1px 4px 6px #f68668; 
 		
 }
 
 
 
-.letter2 span:before,
-.letter2:after {
+.letter6 span:before,
+.letter6:after {
 	-webkit-transform-origin: 50% 0;
 	-ms-transform-origin: 50% 0;
 	transform-origin: 50% 0;
 }
 
-.letter2 span:before {
+.letter6 span:before {
 	-webkit-transform: scale(1,1.05) skew(4deg,0deg);
 	-ms-transform: scale(1,1.05) skew(4deg,0deg);
 	transform: scale(1,1.05) skew(4deg,0deg);
 }
 
-.letter2 span:after {
+.letter6 span:after {
 	text-shadow: 0px -1px 0px hsla(360, 100%, 100%, 0.1), 0px 3px 1px hsla(0, 0%, 0%, 0.4);
 	-webkit-transform: rotateX(15deg);
 	-ms-transform: rotateX(15deg);
 	transform: rotateX(15deg);
 }
 
-.letter2:hover span:before {
+.letter6:hover span:before {
 	-webkit-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 	-ms-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 	transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 }
 
-.letter2:hover span:after {
+.letter6:hover span:after {
 	-webkit-transform: translateY(0.045em) rotateX(40deg);
 	-ms-transform: translateY(0.045em) rotateX(40deg);
 	transform: translateY(0.045em) rotateX(40deg);
 }
 
-.letter2 span { 
+.letter6 span { 
 	text-shadow: 
-		1px 4px 6px #fbcec2, 
+		1px 4px 6px #f68668, 
 		0 0 0 hsla(0, 0%, 0%, 0.3), 
-		1px 4px 6px #fbcec2; 
+		1px 4px 6px #f68668; 
 		
 }
 
+
+
+.letter7 span:before,
+.letter7:after {
+	-webkit-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+.letter7 span:before {
+	-webkit-transform: scale(1,1.05) skew(4deg,0deg);
+	-ms-transform: scale(1,1.05) skew(4deg,0deg);
+	transform: scale(1,1.05) skew(4deg,0deg);
+}
+
+.letter7 span:after {
+	text-shadow: 0px -1px 0px hsla(360, 100%, 100%, 0.1), 0px 3px 1px hsla(0, 0%, 0%, 0.4);
+	-webkit-transform: rotateX(15deg);
+	-ms-transform: rotateX(15deg);
+	transform: rotateX(15deg);
+}
+
+.letter7:hover span:before {
+	-webkit-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
+	-ms-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
+	transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
+}
+
+.letter7:hover span:after {
+	-webkit-transform: translateY(0.045em) rotateX(40deg);
+	-ms-transform: translateY(0.045em) rotateX(40deg);
+	transform: translateY(0.045em) rotateX(40deg);
+}
+
+.letter7 span { 
+	text-shadow: 
+		1px 4px 6px #fab6a4, 
+		0 0 0 hsla(0, 0%, 0%, 0.3), 
+		1px 4px 6px #fab6a4; 
+		
+}
 
 
 .letter1 span:before,
@@ -299,85 +350,85 @@ grid li span:before {
 
 
 
-.letter6 span:before,
-.letter6:after {
+.letter8 span:before,
+.letter8:after {
 	-webkit-transform-origin: 50% 0;
 	-ms-transform-origin: 50% 0;
 	transform-origin: 50% 0;
 }
 
-.letter6 span:before {
+.letter8 span:before {
 	-webkit-transform: scale(1,1.05) skew(4deg,0deg);
 	-ms-transform: scale(1,1.05) skew(4deg,0deg);
 	transform: scale(1,1.05) skew(4deg,0deg);
 }
 
-.letter6 span:after {
+.letter8 span:after {
 	text-shadow: 0px -1px 0px hsla(360, 100%, 100%, 0.1), 0px 3px 1px hsla(0, 0%, 0%, 0.4);
 	-webkit-transform: rotateX(15deg);
 	-ms-transform: rotateX(15deg);
 	transform: rotateX(15deg);
 }
 
-.letter6:hover span:before {
+.letter8:hover span:before {
 	-webkit-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 	-ms-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 	transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 }
 
-.letter6:hover span:after {
+.letter8:hover span:after {
 	-webkit-transform: translateY(0.045em) rotateX(40deg);
 	-ms-transform: translateY(0.045em) rotateX(40deg);
 	transform: translateY(0.045em) rotateX(40deg);
 }
 
-.letter6 span { 
+.letter8 span { 
 	text-shadow: 
-		1px 4px 6px #e74d3c, 
+		1px 4px 6px #fab6a4, 
 		0 0 0 hsla(0, 0%, 0%, 0.3), 
-		1px 4px 6px #e74d3c; 
+		1px 4px 6px #fab6a4; 
 		
 }
 
 
 
-.letter9 span:before,
-.letter9:after {
+.letter10 span:before,
+.letter10:after {
 	-webkit-transform-origin: 50% 0;
 	-ms-transform-origin: 50% 0;
 	transform-origin: 50% 0;
 }
 
-.letter9 span:before {
+.letter10 span:before {
 	-webkit-transform: scale(1,1.05) skew(4deg,0deg);
 	-ms-transform: scale(1,1.05) skew(4deg,0deg);
 	transform: scale(1,1.05) skew(4deg,0deg);
 }
 
-.letter9 span:after {
+.letter10 span:after {
 	text-shadow: 0px -1px 0px hsla(360, 100%, 100%, 0.1), 0px 3px 1px hsla(0, 0%, 0%, 0.4);
 	-webkit-transform: rotateX(15deg);
 	-ms-transform: rotateX(15deg);
 	transform: rotateX(15deg);
 }
 
-.letter9:hover span:before {
+.letter10:hover span:before {
 	-webkit-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 	-ms-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 	transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
 }
 
-.letter9:hover span:after {
+.letter10:hover span:after {
 	-webkit-transform: translateY(0.045em) rotateX(40deg);
 	-ms-transform: translateY(0.045em) rotateX(40deg);
 	transform: translateY(0.045em) rotateX(40deg);
 }
 
-.letter9 span { 
+.letter10 span { 
 	text-shadow: 
 		1px 4px 6px #e74d3c, 
 		0 0 0 hsla(0, 0%, 0%, 0.3), 
-		1px 4px 6px #e74d3c; 
+		1px 4px 6px #white; 
 		
 }
 

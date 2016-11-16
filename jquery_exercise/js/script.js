@@ -34,22 +34,18 @@ $("body").addClass("gradient");
 var clicked = false;
 
 $("#toggle").click(function() {
-   
-if (clicked == false) {
-        console.log ("you made it..");
+   if (clicked == false) {
             $("#status").html("GO")
             $("#status").css("background-color","lime");
             $("#toggle").html("Stop");
-            
-    clicked = true;
-    
-    } else {
+            clicked = true;
+        } 
+     else {
           $("#status").html("STOP");
           $("#status").css("background-color","red");
           $("#toggle").html("Start"); 
           clicked = false;
-          
-}
+        }
 });
 
 $("#status").mouseenter(function() {
@@ -58,9 +54,13 @@ $("#status").mouseenter(function() {
         }
 });
 $("#status").mouseleave(function() {
-    if (clicked == false) {
         $("#cat").hide();
-    }
 });
 
 
+console.log("clicked")
+
+$("#toggle").click(function () {
+    console.log("Hello World")
+    
+})

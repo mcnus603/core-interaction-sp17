@@ -32,16 +32,13 @@ for (var i=0; i < 300; i++) {
 //when moused over, each box different color
 
 
-$(".box").each(function () {
-    $(".box").mouseover(function boxcolors(){
+
+
+
+$(".box").mouseover(function boxcolors(){
     var color = hexCode();
     $(this).css("background-color", color);
-    });
-    
 });
-
-
-
 
 
 
@@ -49,13 +46,18 @@ $(".box").each(function () {
 //when left button clicked, changes the background color
 
 function changecolor () {
-   var color = hexCode();
+    var color = hexCode();
     $("body").css("background-color", color);
-    }; 
- 
+    $(".box").each(function() {
+        if ($(this).css("background-color") != "rgba(0, 0, 0, 0)") {
+            var color = hexCode();
+            $(this).css("background-color", color);
+        }
+    })
+}
  
  function startcolor () {
-     setInterval("changecolor()", 2000)
+     setInterval("changecolor()", 3000)
  };
  
  window.onload = startcolor();
@@ -93,6 +95,9 @@ $(".square").click(function(){
 
 //to change the colors back--if using toggle class need of important 
 
-if$.css 
+//if$.css 
 
 //animation of color for set interval--runs code every x mil sec 
+
+
+//

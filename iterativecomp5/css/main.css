@@ -98,3 +98,7 @@ img {
 .right:hover {
     opacity: .3
 }
+
+.trans{
+    background-color: white !important;
+}

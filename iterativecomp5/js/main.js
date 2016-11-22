@@ -45,21 +45,34 @@ $(".left").click(function() {
     $("body").css("background-color", color);
     });
 
-//CLICK FOR TRANSPARENT SQUARES
+//WHEN CLICK DEACTIVATES SQUARES
 
 $(".box").each(function() {
     $(".box").click(function(){
-    $(this).css("background-color", "transparent");
+    $(this).addClass("trans")
+    console.log ("deactivated")
     });
     
 });
 
+//REACTIVATING
+
+(".dot").click(function(){
+    if($(this).hasClass("trans")) {
+       $(this).removeClass("trans"); 
+    } else {
+        $(this).addClass("trans");
+    }
+});
 
 //RESTART
 $(".right").click(function(){
     $(".box").css("background-color", "transparent")
     $("body").css("background-color", "black")
 })
+
+
+
 
 
 //make a boolean--if clicked = false then do the color randomizine??

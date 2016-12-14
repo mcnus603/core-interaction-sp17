@@ -105,233 +105,358 @@
 
 
 .g1 {
-    
-    display: none;
+   width:538;
+   height:539;
+   background-color: #fffd68;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
+   
 }
+
 .g2 {
-    background-image: url("graphs/2.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #d2331d;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g3 {
-    background-image: url("graphs/3.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+ width:538;
+   height:539;
+   background-color: #fc3353;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g4 {
-    background-image: url("graphs/4.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #6d02f0;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g5 {
-    background-image: url("graphs/5.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #5601f4;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g6 {
-    background-image: url("graphs/6.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #e9ae2c;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g7 {
-    background-image: url("graphs/7.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #dc733c;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g8 {
-    background-image: url("graphs/8.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #e6171f;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g9{
-    background-image: url("graphs/9.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #94c8fa;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g10 {
-    background-image: url("graphs/10.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #404fd0;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g11 {
-    background-image: url("graphs/12.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #e6cac7;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
+.g12 {
+    width:538;
+   height:539;
+   background-color: #eee4e3;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
+}
+
 .g13 {
-    background-image: url("graphs/13.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #dfcfab;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g14 {
-    background-image: url("graphs/14.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #8ba9cb;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g15 {
-    background-image: url("graphs/15.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; display: none;
+   width:538;
+   height:539;
+   background-color: #6b8fb1;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g16{
-    background-image: url("graphs/16.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #aa928e;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g17{
-    background-image: url("graphs/17.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #c2a3a9;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g18 {
-    background-image: url("graphs/18.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #98958c;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g19 {
-    background-image: url("graphs/19.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #838182;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g20 {
-    background-image: url("graphs/20.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #6b7889;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g21 {
-    background-image: url("graphs/21.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #8f412d;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g22 {
-    background-image: url("graphs/22.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #9f6652;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g23 {
-    background-image: url("graphs/23.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+     width:538;
+   height:539;
+   background-color: #7c7269;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 .g24 {
-    background-image: url("graphs/24.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100; 
-    display: none;
+    width:538;
+   height:539;
+   background-color: #455056;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 .g25 {
-    background-image: url("graphs/25.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100;
-    display: none;
+     width:538;
+   height:539;
+   background-color: #0e0f07;
+   position:absolute;
+   right:40px;
+   top:34px;
+   display: none;
 }
 
 
+
+.nyc1:hover .g1 {
+    display: block;
+ 
+}
+.nyc2:hover .g2 {
+    display: block;
+ 
 }
 
-.nyc1:hover .graph {
-    display: none;
+.nyc3:hover .g3 {
+    display: block;
  
 }
 
 
+.nyc4:hover .g4 {
+    display: block;
+ 
+}
+
+.nyc5:hover .g5 {
+    display: block;
+ 
+}
+
+.nyc6:hover .g6 {
+    display: block;
+ 
+}
+
+.nyc7:hover .g7 {
+    display: block;
+ 
+}
+
+.nyc8:hover .g8 {
+    display: block;
+ 
+}
+.nyc9:hover .g9 {
+    display: block;
+ 
+}
+
+.nyc10:hover .g10 {
+    display: block;
+ 
+}
+
+
+.nyc11:hover .g12 {
+    display: block;
+ 
+}
+
+.nyc13:hover .g13 {
+    display: block;
+ 
+}
+
+.nyc14:hover .g14 {
+    display: block;
+ 
+}
+
+.nyc15:hover .g15 {
+    display: block;
+ 
+}
+
+.nyc16:hover .g16 {
+    display: block;
+ 
+}
+.nyc17:hover .g17 {
+    display: block;
+ 
+}
+
+.nyc18:hover .g18 {
+    display: block;
+ 
+}
+
+
+.nyc19:hover .g19 {
+    display: block;
+ 
+}
+
+.nyc20:hover .g20 {
+    display: block;
+ 
+}
+
+.nyc22:hover .g21 {
+    display: block;
+ 
+}
+
+.nyc23:hover .g23 {
+    display: block;
+ 
+}
+
+.nyc24:hover .g24 {
+    display: block;
+ 
+}
+
+.nyc25:hover .g25 {
+    display: block;
+ 
+}

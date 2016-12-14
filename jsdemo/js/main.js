@@ -1,24 +1,13 @@
-for (var increment = 0; increment < 100; increment ++) {
-    $("body").append("<div class='box'> </div>")
-}
+var arraycomp1 = ["#DCD2FF", "#D0C9F2", "#C7C1E5", "#BAB4D6", "#ADA8C6", 
+"#A5A0BA", "#9894AA", "#E1D4FF", "#D8D0F4", "#CFCAE8", "#C7C3DD", "#C0BCD3",
+"#B8B5C9", "#AFACBC", "#E9D4FF","#E0D0F4","#D6CAE8","#CDC3DD","#C5BCD3",
+"#B9B0C6","#ABA3B7","#EFD4FF","#E3CEF2","#D9C5E8","#D0BFDD","#C7B8D3",
+"#C0B1C9","#B6AABF","#FBD4FF","#EFD0F4","#E6CAEA","#DCC3E0", "#D3BDD6",
+"#C9B6CC","#BFAEC1","#FFD4F2","#F4D0EA", "#E8CAE1", "#DDC3D7", "#D3BCCD", 
+"#C6B3C1", "#BAAAB6","#FFD4E5", "#F4D0DE", "#E8CAD6", "#DBC1CC", "#CEB7C0", 
+"#C4B1B8", "#B5A5AC"];
 
+console.log(arraycomp1[4]);
+console.log("hello");
 
-var rounding = 0;
-
-
-$(".box").each(function(){
-    console.log("I found class box");
-    console.log(rounding);
-    var radius = rounding + "px";
-    $(this).css("border-radius", radius);
-    rounding ++;
-})
-
-
-$(".box").click (function(){
-    $(this).css("background-color", "blue");
-});
-
-//var incrament or i
-//what box each does is find each instance of .box in dom 
-//could I do something where if clicked is evem then something happens and if clicked is odd it could be something else
+$(".comp1").html(arraycomp1 ++);

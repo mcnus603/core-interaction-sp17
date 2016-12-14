@@ -18,6 +18,7 @@
     width:850px;
     padding-top: 10px;
     padding-left:40px;
+    z-index: 10;
 }
 
 .nyc1 {
@@ -103,206 +104,234 @@
 
 
 
-.nyc1:hover {
-    background-image: url("graphs/1.jpg");
-    width: 850px;
-    position: absolute;
-    top:40px;
-    left: 40px;
-    z-index: 100;
+.g1 {
+    
+    display: none;
 }
-.nyc2:hover {
+.g2 {
     background-image: url("graphs/2.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc3:hover {
+.g3 {
     background-image: url("graphs/3.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc4:hover {
+.g4 {
     background-image: url("graphs/4.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc5:hover {
+.g5 {
     background-image: url("graphs/5.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc6:hover {
+.g6 {
     background-image: url("graphs/6.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc7:hover {
+.g7 {
     background-image: url("graphs/7.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc8:hover {
+.g8 {
     background-image: url("graphs/8.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc9:hover {
+.g9{
     background-image: url("graphs/9.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc10:hover {
+.g10 {
     background-image: url("graphs/10.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc11:hover {
+.g11 {
     background-image: url("graphs/12.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc13:hover {
+.g13 {
     background-image: url("graphs/13.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc14:hover {
+.g14 {
     background-image: url("graphs/14.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc15:hover {
+.g15 {
     background-image: url("graphs/15.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; display: none;
 }
 
-.nyc16:hover {
+.g16{
     background-image: url("graphs/16.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc17:hover {
+.g17{
     background-image: url("graphs/17.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc18:hover {
+.g18 {
     background-image: url("graphs/18.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc19:hover {
+.g19 {
     background-image: url("graphs/19.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc20:hover {
+.g20 {
     background-image: url("graphs/20.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc21:hover {
+.g21 {
     background-image: url("graphs/21.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc22:hover {
+.g22 {
     background-image: url("graphs/22.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc23:hover {
+.g23 {
     background-image: url("graphs/23.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
 
-.nyc24:hover {
+.g24 {
     background-image: url("graphs/24.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
-    z-index: 100;
+    z-index: 100; 
+    display: none;
 }
-.nyc25:hover {
+.g25 {
     background-image: url("graphs/25.jpg");
     width: 850px;
     position: absolute;
     top:40px;
     left: 40px;
     z-index: 100;
+    display: none;
 }
+
+
+}
+
+.nyc1:hover .graph {
+    display: none;
+ 
+}
+
+

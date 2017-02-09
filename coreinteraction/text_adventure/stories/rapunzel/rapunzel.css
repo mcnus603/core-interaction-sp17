@@ -19,3 +19,8 @@ p {
 	top: 0px;
 	right: 100px;
 }
+
+a {
+	color: black;
+	text-decoration: none;
+}

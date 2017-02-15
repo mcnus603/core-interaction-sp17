@@ -28,6 +28,8 @@ a {
 body {
 	line-height: 32px;
 	font-size: 24px;
+	font-family: Bitter;
+	background-color: #F0FBFC;
 
 }
 
@@ -46,8 +48,68 @@ body {
 	color:lime;
 }
 
+.cinderella_page, .rapunzel_page, .sleeping_beauty_page, .snow_white_page {
+	display: none;
+}
 
+.homepage_container{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 75px;
+	margin-bottom: 100px;
+	float: both;
+}
 
+#rapunzel_sentence{
+	font-family: Bitter;
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: -60px;
+	float: left;
+	font-size: 24px;
+	float:both;
+}
+
+#cinderella_sentence{
+	font-family: Bitter;
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: -60px;
+	float: left;
+	font-size: 24px;
+	float:both;
+}
+
+#sleeping_beauty_sentence{
+	font-family: Bitter;
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: -60px;
+	float: left;
+	font-size: 24px;
+	float:both;
+}
+
+#snow_white_sentence{
+	font-family: Bitter;
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: -60px;
+	float: left;
+	font-size: 24px;
+	float:both;
+}
+
+.title{
+	font-size: 98px;
+	font-family: Bitter;
+	margin-bottom: 140px;
+
+}
 
 
 

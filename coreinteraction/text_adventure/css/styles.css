@@ -11,7 +11,33 @@ h1 {
 
 }
 
-.sentence{
+.rapunzel_sentence{
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: -60px;
+	float: left;
+	font-size: 24px;
+}
+
+.cinderella_sentence{
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: -60px;
+	float: left;
+	font-size: 24px;
+}
+
+.sleeping_beauty_sentence{
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: -60px;
+	float: left;
+	font-size: 24px;
+}
+.snow_white_sentence{
 	width: 20%;
 	margin-left: 2%;
 	margin-right: 2%;
@@ -29,5 +55,9 @@ a {
 	position: absolute;
 	top: 0px;
 	right: 100px;
+}
+
+.hidden{
+	display: none;
 }
 

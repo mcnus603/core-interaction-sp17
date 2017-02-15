@@ -43,21 +43,25 @@ $(document).ready(function() {
 
 	$("#cinderella_sentence").click(function(e){
 		$(".homepage").hide();
-		$(".cinderella").show();
+		$(".cinderella_page").show();
 	});
 
 	$("#snow_white_sentence").click(function(e){
-		$(".homepage").css("display", "none");
-		$(".snow_white_page").css("display", "show");
+		$(".homepage").hide();
+		$(".snow_white_page").show();
 	});
 
 	$("#sleeping_beauty_sentence").click(function(e){
-		$(".homepage").css("display", "none");
-		$(".sleeping_beauty_page").css("display", "show");
+		$(".homepage").hide();
+		$(".sleeping_beauty_page").show();
 	});
 
 	$(".bookmark").click(function(e){
-		$(".homepage").css("display", "show");
+		$(".homepage").show();
+		$(".sleeping_beauty_page").hide();
+		$(".rapunzel_page").hide();
+		$(".cinderella_page").hide();
+		$(".snow_white_page").hide();
 	})
 
 

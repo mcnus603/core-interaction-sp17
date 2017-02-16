@@ -573,6 +573,81 @@ $(document).ready(function() {
 
 	});
 
+		$("#marriage_cinderella").click(function(e){
+		$(".snow_white_page").show();
+		$(".sleeping_beauty_page").show();
+
+		$(".cinderella_page").css("width","230px");
+		$(".snow_white_page").css("width","230px");
+		$(".sleeping_beauty_page").css("width","230px");
+
+		$(".snow_white_page").css("left","750px");
+		$(".sleeping_beauty_page").css("left","450px");
+
+		$("#marriage_snow_white").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("#marriage_sleeping_beauty").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("a").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".snow_white_page").mouseenter(function(){
+			$(".snow_white_title").css("font-size","45px");
+		});
+		$(".snow_white_page").mouseleave(function(){
+			$(".snow_white_title").css("font-size","30px");
+		});
+		$(".cinderella_page").mouseenter(function(){
+			$(".cinderella_title").css("font-size","45px");
+		});
+		$(".cinderella_page").mouseleave(function(){
+			$(".cinderella_title").css("font-size","30px");
+		});
+
+		$(".sleeping_beauty_page").mouseenter(function(){
+			$(".sleeping_beauty_title").css("font-size","45px");
+		});
+		$(".sleeping_beauty_page").mouseleave(function(){
+			$(".sleeping_beauty_title").css("font-size","30px");
+		});
+
+	});
+
+	$("#marriage_sleeping_beauty").click(function(e){
+		$(".cinderella_page").show();
+		$(".snow_white_page").show();
+
+		$(".cinderella_page").css("width","230px");
+		$(".snow_white_page").css("width","230px");
+		$(".sleeping_beauty_page").css("width","230px");
+
+		$(".snow_white_page").css("left","750px");
+		$(".sleeping_beauty_page").css("left","450px");
+
+		$("#marriage_cinderella").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("#marriage_snow_white").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("a").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".snow_white_page").mouseenter(function(){
+			$(".snow_white_title").css("font-size","45px");
+		});
+		$(".snow_white_page").mouseleave(function(){
+			$(".snow_white_title").css("font-size","30px");
+		});
+		$(".cinderella_page").mouseenter(function(){
+			$(".cinderella_title").css("font-size","45px");
+		});
+		$(".cinderella_page").mouseleave(function(){
+			$(".cinderella_title").css("font-size","30px");
+		});
+
+		$(".sleeping_beauty_page").mouseenter(function(){
+			$(".sleeping_beauty_title").css("font-size","45px");
+		});
+		$(".sleeping_beauty_page").mouseleave(function(){
+			$(".sleeping_beauty_title").css("font-size","30px");
+		});
+
+	});
 
 
 

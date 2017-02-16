@@ -1,6 +1,5 @@
-var colors=['#C95BA2','#943E81','#46286D','#725C8E','#D89CC5','#C6A8D0','#C2466C','#D37A62','#C45E28'];
-
-
+var colors=['#EF568E','#D25DA2','#D04527','#A8228C','#D67FB4','#BB83B9','#C2466C','#F48069','#4F2E8D'];
+var back=[]
 
 $(document).ready(function() {
 //letter.js
@@ -15,8 +14,18 @@ $(document).ready(function() {
 	$(".characters").mouseenter(function(){
 		$(this).css("color", colors[Math.floor(Math.random()*colors.length)]);
 	});
-	 // 	$(".characters").mouseleave(function(){
-	 // 		$(this).animate({color: "black"}, 1000);
+
+	$(".bookmark").mouseenter(function(){
+		$(".bookmark").css("opacity",".8");
+	});
+
+	$(".bookmark").mouseleave(function(){
+		$(".bookmark").css("opacity","1");
+	});
+
+	$(".characters").mouseleave(function(){
+		$(this).animate({color: "black"}, 2000);
+	});
 	 // });
 
 	// $(".characters").mouseleave(function(){
@@ -24,6 +33,12 @@ $(document).ready(function() {
 
 	// 	});
 	// });
+
+	$(".snow_white_text").css("display", "inline");
+	$(".rapunzel_text").css("display", "inline");
+	$(".sleeping_beauty_text").css("display", "inline");
+	$(".cinderella_text").css("display", "inline");
+	$(".line").css("display", "inline");
 
 
 	$(".clickable").mouseenter(function(){
@@ -63,10 +78,10 @@ $(document).ready(function() {
 		$(".rapunzel_page").hide();
 		$(".cinderella_page").hide();
 		$(".snow_white_page").hide();
-		$(".snow_white_page").css("width","500px");
-		$(".sleeping_beauty_page").css("width","500px");
-		$(".cinderella_page").css("width","500px");
-		$(".rapunzel_page").css("width","500px");
+		$(".snow_white_page").css("width","700px");
+		$(".sleeping_beauty_page").css("width","700px");
+		$(".cinderella_page").css("width","700px");
+		$(".rapunzel_page").css("width","700px");
 
 		$(".snow_white_page").css("top","100px");
 		$(".sleeping_beauty_page").css("top","100px");
@@ -91,7 +106,12 @@ $(document).ready(function() {
 		});
 		$(".snow_white_page").mouseenter(function(){
 			$(".snow_white_title").css("font-size","30px");
+
 		});
+
+		$(".line").css("color", "black");
+		$("a").css("color", "black");
+		$("a").css("color", "black");
 		
 	});
 
@@ -101,10 +121,10 @@ $(document).ready(function() {
 		$(".rapunzel_page").hide();
 		$(".cinderella_page").hide();
 		$(".snow_white_page").hide();
-		$(".snow_white_page").css("width","500px");
-		$(".sleeping_beauty_page").css("width","500px");
-		$(".cinderella_page").css("width","500px");
-		$(".rapunzel_page").css("width","500px");
+		$(".snow_white_page").css("width","700px");
+		$(".sleeping_beauty_page").css("width","700px");
+		$(".cinderella_page").css("width","700px");
+		$(".rapunzel_page").css("width","700px");
 
 		$(".snow_white_page").css("top","100px");
 		$(".sleeping_beauty_page").css("top","100px");
@@ -130,11 +150,15 @@ $(document).ready(function() {
 		$(".snow_white_page").mouseenter(function(){
 			$(".snow_white_title").css("font-size","30px");
 		});
-
+		$(".line").css("color", "black");
+		$("a").css("color", "black");
 
 	});
 
 	$(".line").mouseenter(function(){
+		$(this).css("color", colors[Math.floor(Math.random()*colors.length)]);
+	});
+	$("a").mouseenter(function(){
 		$(this).css("color", colors[Math.floor(Math.random()*colors.length)]);
 	});
 
@@ -146,10 +170,10 @@ $(document).ready(function() {
 		$(".cinderella_page").hide();
 		$(".snow_white_page").hide();
 
-		$(".snow_white_page").css("width","500px");
-		$(".sleeping_beauty_page").css("width","500px");
-		$(".cinderella_page").css("width","500px");
-		$(".rapunzel_page").css("width","500px");
+		$(".snow_white_page").css("width","700px");
+		$(".sleeping_beauty_page").css("width","700px");
+		$(".cinderella_page").css("width","700px");
+		$(".rapunzel_page").css("width","700px");
 
 		$(".snow_white_page").css("top","100px");
 		$(".sleeping_beauty_page").css("top","100px");
@@ -165,6 +189,9 @@ $(document).ready(function() {
 			$(".rapunzel_title").css("font-size","30px");
 		});
 
+		$(".line").css("color", "black");
+		$("a").css("color", "black");
+
 	});
 //sleepingbeauty
 	$(".sleeping_beauty_title").click(function(){
@@ -172,10 +199,10 @@ $(document).ready(function() {
 		$(".cinderella_page").hide();
 		$(".snow_white_page").hide();
 
-		$(".snow_white_page").css("width","500px");
-		$(".sleeping_beauty_page").css("width","500px");
-		$(".cinderella_page").css("width","500px");
-		$(".rapunzel_page").css("width","500px");
+		$(".snow_white_page").css("width","700px");
+		$(".sleeping_beauty_page").css("width","700px");
+		$(".cinderella_page").css("width","700px");
+		$(".rapunzel_page").css("width","700px");
 
 		$(".snow_white_page").css("top","100px");
 		$(".sleeping_beauty_page").css("top","100px");
@@ -191,6 +218,9 @@ $(document).ready(function() {
 			$(".sleeping_beauty_title").css("font-size","30px");
 		});
 
+		$(".line").css("color", "black");
+		$("a").css("color", "black");
+
 	});
 
 	//cinderella
@@ -200,10 +230,10 @@ $(document).ready(function() {
 		$(".sleeping_beauty_page").hide();
 		$(".snow_white_page").hide();
 
-		$(".snow_white_page").css("width","500px");
-		$(".sleeping_beauty_page").css("width","500px");
-		$(".cinderella_page").css("width","500px");
-		$(".rapunzel_page").css("width","500px");
+		$(".snow_white_page").css("width","700px");
+		$(".sleeping_beauty_page").css("width","700px");
+		$(".cinderella_page").css("width","700px");
+		$(".rapunzel_page").css("width","700px");
 
 		$(".snow_white_page").css("top","100px");
 		$(".sleeping_beauty_page").css("top","100px");
@@ -219,6 +249,9 @@ $(document).ready(function() {
 			$(".cinderella_title").css("font-size","30px");
 		});
 
+		$(".line").css("color", "black");
+		$("a").css("color", "black");
+
 	});
 
 	//snow white
@@ -227,10 +260,10 @@ $(document).ready(function() {
 		$(".sleeping_beauty_page").hide();
 		$(".cinderella_page").hide();
 
-		$(".snow_white_page").css("width","500px");
-		$(".sleeping_beauty_page").css("width","500px");
-		$(".cinderella_page").css("width","500px");
-		$(".rapunzel_page").css("width","500px");
+		$(".snow_white_page").css("width","700px");
+		$(".sleeping_beauty_page").css("width","700px");
+		$(".cinderella_page").css("width","700px");
+		$(".rapunzel_page").css("width","700px");
 
 		$(".snow_white_page").css("top","100px");
 		$(".sleeping_beauty_page").css("top","100px");
@@ -246,17 +279,20 @@ $(document).ready(function() {
 			$(".snow_white_title").css("font-size","30px");
 		});
 
+		$(".line").css("color", "black");
+		$("a").css("color", "black");
+
 	});
 
 
 //childless sleeping beauty to rapunzel 
 
-	$(".childless_sleeping_beauty").click(function(e){
+	$("#childless_sleeping_beauty").click(function(e){
 		$(".rapunzel_page").show();
 		$(".sleeping_beauty_page").css("width","350px");
 		$(".rapunzel_page").css("width","350px");
 		$(".rapunzel_page").css("left","600px");
-		$(".childless_rapunzel").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("#childless_rapunzel").css("color", colors[Math.floor(Math.random()*colors.length)]);
 		
 		//hover state
 		$(".rapunzel_page").mouseenter(function(){
@@ -272,16 +308,18 @@ $(document).ready(function() {
 			$(".sleeping_beauty_title").css("font-size","30px");
 		});
 
+
+
 	});
 
 //childless rapunzel to sleeping
 
-	$(".childless_rapunzel").click(function(e){
+	$("#childless_rapunzel").click(function(e){
 		$(".sleeping_beauty_page").show();
 		$(".sleeping_beauty_page").css("width","350px");
 		$(".rapunzel_page").css("width","350px");
 		$(".sleeping_beauty_page").css("left","600px");
-		$(".childless_sleeping_beauty").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("#childless_sleeping_beauty").css("color", colors[Math.floor(Math.random()*colors.length)]);
 		
 		//hover state
 		$(".rapunzel_page").mouseenter(function(){
@@ -299,12 +337,12 @@ $(document).ready(function() {
 
 	});
 //seven sleeping beauty to snow white
-	$(".seven_sleeping_beauty").click(function(e){
+	$("#seven_sleeping_beauty").click(function(e){
 		$(".snow_white_page").show();
 		$(".sleeping_beauty_page").css("width","350px");
 		$(".snow_white_page").css("width","350px");
 		$(".snow_white_page").css("left","600px");
-		$(".seven_snow_white").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("#seven_snow_white").css("color", colors[Math.floor(Math.random()*colors.length)]);
 		
 		//hover state
 		$(".snow_white_page").mouseenter(function(){
@@ -323,12 +361,110 @@ $(document).ready(function() {
 	});
 
 //seven snow white to sleeping beauty 
-	$(".seven_snow_white").click(function(e){
+	$("#seven_snow_white").click(function(e){
 		$(".sleeping_beauty_page").show();
 		$(".sleeping_beauty_page").css("width","350px");
 		$(".snow_white_page").css("width","350px");
 		$(".sleeping_beauty_page").css("left","600px");
-		$(".seven_sleeping_beauty").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("#seven_sleeping_beauty").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".snow_white_page").mouseenter(function(){
+			$(".snow_white_title").css("font-size","45px");
+		});
+		$(".snow_white_page").mouseleave(function(){
+			$(".snow_white_title").css("font-size","30px");
+		});
+		$(".sleeping_beauty_page").mouseenter(function(){
+			$(".sleeping_beauty_title").css("font-size","45px");
+		});
+		$(".sleeping_beauty_page").mouseleave(function(){
+			$(".sleeping_beauty_title").css("font-size","30px");
+		});
+
+	});
+//happily from rapunzel to sleeping
+
+	$("#happily_rapunzel").click(function(e){
+		$(".sleeping_beauty_page").show();
+		$(".sleeping_beauty_page").css("width","350px");
+		$(".rapunzel_page").css("width","375px");
+		$(".sleeping_beauty_page").css("left","625px");
+		$("#happily_sleeping_beauty").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".rapunzel_page").mouseenter(function(){
+			$(".rapunzel_title").css("font-size","45px");
+		});
+		$(".rapunzel_page").mouseleave(function(){
+			$(".rapunzel_title").css("font-size","30px");
+		});
+		$(".sleeping_beauty_page").mouseenter(function(){
+			$(".sleeping_beauty_title").css("font-size","45px");
+		});
+		$(".sleeping_beauty_page").mouseleave(function(){
+			$(".sleeping_beauty_title").css("font-size","30px");
+		});
+
+	});
+
+	//happily from sleeping to rapunzel
+
+		$("#happily_sleeping_beauty").click(function(e){
+		$(".rapunzel_page").show();
+		$(".rapunzel_page").css("width","375px");
+		$(".sleeping_beauty_page").css("width","350px");
+		$(".rapunzel_page").css("left","625px");
+		$("#happily_rapunzel").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".rapunzel_page").mouseenter(function(){
+			$(".rapunzel_title").css("font-size","45px");
+		});
+		$(".rapunzel_page").mouseleave(function(){
+			$(".rapunzel_title").css("font-size","30px");
+		});
+		$(".sleeping_beauty_page").mouseenter(function(){
+			$(".sleeping_beauty_title").css("font-size","45px");
+		});
+		$(".sleeping_beauty_page").mouseleave(function(){
+			$(".sleeping_beauty_title").css("font-size","30px");
+		});
+
+	});
+
+//pricked sleeping to snow 
+	$("#pricked_sleeping_beauty").click(function(e){
+		$(".snow_white_page").show();
+		$(".sleeping_beauty_page").css("width","350px");
+		$(".snow_white_page").css("width","350px");
+		$(".snow_white_page").css("left","600px");
+		$("#pricked_snow_white").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".snow_white_page").mouseenter(function(){
+			$(".snow_white_title").css("font-size","45px");
+		});
+		$(".snow_white_page").mouseleave(function(){
+			$(".snow_white_title").css("font-size","30px");
+		});
+		$(".sleeping_beauty_page").mouseenter(function(){
+			$(".sleeping_beauty_title").css("font-size","45px");
+		});
+		$(".sleeping_beauty_page").mouseleave(function(){
+			$(".sleeping_beauty_title").css("font-size","30px");
+		});
+
+	});
+
+//pricked snow to sleeping
+
+	$("#pricked_snow_white").click(function(e){
+		$(".sleeping_beauty_page").show();
+		$(".sleeping_beauty_page").css("width","350px");
+		$(".snow_white_page").css("width","350px");
+		$(".sleeping_beauty_page").css("left","600px");
+		$("#pricked_sleeping_beauty").css("color", colors[Math.floor(Math.random()*colors.length)]);
 		
 		//hover state
 		$(".snow_white_page").mouseenter(function(){
@@ -347,7 +483,95 @@ $(document).ready(function() {
 	});
 
 
+//karma cinderella to snow
+	$("#karma_cinderella").click(function(e){
+		$(".snow_white_page").show();
+		$(".cinderella_page").css("width","306px");
+		$(".snow_white_page").css("width","394px");
+		$(".snow_white_page").css("left","600px");
+		$("#karma_snow_white").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("a").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".snow_white_page").mouseenter(function(){
+			$(".snow_white_title").css("font-size","45px");
+		});
+		$(".snow_white_page").mouseleave(function(){
+			$(".snow_white_title").css("font-size","30px");
+		});
+		$(".cinderella_page").mouseenter(function(){
+			$(".cinderella_title").css("font-size","45px");
+		});
+		$(".cinderella_page").mouseleave(function(){
+			$(".cinderella_title").css("font-size","30px");
+		});
 
+	});
+
+//karma snow to cinderella
+	$("#karma_snow_white").click(function(e){
+		$(".cinderella_page").show();
+		$(".cinderella_page").css("width","306px");
+		$(".snow_white_page").css("width","394px");
+		$(".cinderella_page").css("left","600px");
+		$("#karma_cinderella").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("a").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".snow_white_page").mouseenter(function(){
+			$(".snow_white_title").css("font-size","45px");
+		});
+		$(".snow_white_page").mouseleave(function(){
+			$(".snow_white_title").css("font-size","30px");
+		});
+		$(".cinderella_page").mouseenter(function(){
+			$(".cinderella_title").css("font-size","45px");
+		});
+		$(".cinderella_page").mouseleave(function(){
+			$(".cinderella_title").css("font-size","30px");
+		});
+
+	});
+
+	//marriage snow white
+
+	$("#marriage_snow_white").click(function(e){
+		$(".cinderella_page").show();
+		$(".sleeping_beauty_page").show();
+
+		$(".cinderella_page").css("width","230px");
+		$(".snow_white_page").css("width","230px");
+		$(".sleeping_beauty_page").css("width","230px");
+
+		$(".cinderella_page").css("left","750px");
+		$(".sleeping_beauty_page").css("left","450px");
+
+		$("#marriage_cinderella").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("#marriage_sleeping_beauty").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		$("a").css("color", colors[Math.floor(Math.random()*colors.length)]);
+		
+		//hover state
+		$(".snow_white_page").mouseenter(function(){
+			$(".snow_white_title").css("font-size","45px");
+		});
+		$(".snow_white_page").mouseleave(function(){
+			$(".snow_white_title").css("font-size","30px");
+		});
+		$(".cinderella_page").mouseenter(function(){
+			$(".cinderella_title").css("font-size","45px");
+		});
+		$(".cinderella_page").mouseleave(function(){
+			$(".cinderella_title").css("font-size","30px");
+		});
+
+		$(".sleeping_beauty_page").mouseenter(function(){
+			$(".sleeping_beauty_title").css("font-size","45px");
+		});
+		$(".sleeping_beauty_page").mouseleave(function(){
+			$(".sleeping_beauty_title").css("font-size","30px");
+		});
+
+	});
 
 
 

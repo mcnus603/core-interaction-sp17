@@ -5,6 +5,14 @@
 	z-index: 100;
 }
 
+.sidebar{
+	position: fixed;
+	left: 40px;
+	top:50px;
+	z-index: 100;
+
+}
+
 a {
 	color: black;
 	text-decoration: none;
@@ -17,8 +25,8 @@ a {
 }
 
 body {
-	line-height: 32px;
-	font-size: 20px;
+	line-height: 38px;
+	font-size: 28px;
 	font-family: Alice;
 	background-color: #F0FBFC;
 
@@ -38,10 +46,15 @@ body {
 }
 
 
+.cinderella_text, .rapunzel_text, .sleeping_beauty_text, .snow_white_text{
+
+
+}
+
 
 .cinderella_page, .rapunzel_page, .sleeping_beauty_page, .snow_white_page {
 	display: none;
-	width: 500px;
+	width: 700px;
 	position: absolute;
 	left: 150px;
 	top: 100px;
@@ -113,15 +126,23 @@ body {
 	position: fixed;
 	top: 30px;
 	z-index: 100;
-	font-family: Alice;
+	font-family: Sacramento;
 }
 
 .line{
-	color: red;
+}
+
+.clickable{
+	line-height: 28px;
+	font-size: 10px;
+	font-family: Alice;
 }
 
 
-
-
+.box{
+	height: 50px;
+	width: 50px;
+	background-color: red;
+}
 
 

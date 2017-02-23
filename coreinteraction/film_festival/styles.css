@@ -1,0 +1,139 @@
+.container{
+	margin-top: 0px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 150px;
+
+}
+
+.bar{
+	text-align: center;
+	height: 40px; 
+	background-color: black;
+	margin-top: 0px;
+	width: 100%;
+}
+
+.bar2{
+	text-align: center;
+	height: 40px; 
+	background-color: black;
+	width: 100%;
+	color: white;
+	font-size: 15px;
+  	font-family: Pontano Sans;
+  	letter-spacing: 5px;
+  	margin-top: 10px;
+}
+
+h1{
+	font-family: Hammersmith One;
+	font-size: 100px;
+	margin-bottom: 0px;
+
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	position: relative;
+  	top: 25%;
+  	transform: translateY(-50%);
+  	margin-left: 8%;
+  	margin-right: 8%;
+  	font-family: Pontano Sans;
+  	letter-spacing: 5px;
+
+
+}
+
+
+.box{
+	height: 400px;
+	width: 200px;
+	margin: 7px;
+	display: inline-block;
+	float: left;
+	margin-bottom: 100px;
+
+}
+
+.year{
+	margin: 20px;
+	font-family: Hammersmith One;
+}
+
+.description{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Hammersmith One;
+}
+
+.event_info{
+	clear:left;
+}
+.info{
+	clear:left;
+}
+.featuring{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: Pontano Sans;
+	font-size: 50px;
+}
+
+h2{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.middle{
+	
+}
+
+.movie1 {
+	background-color: #F8AC9F;
+}
+
+.movie2{ 
+	background-color: #EBE145;
+}
+
+.movie3{
+	background-color: #F7986A;
+}
+
+.movie4{
+	background-color: #6BC7B3;
+}
+
+.movie5{
+	background-color: #F489AC;
+}
+
+h3{
+	font-size: 30px;
+	font-family: Hammersmith One;
+	background-color: black;
+	color: white;
+
+}
+
+.moreInfo{
+	font-family: Hammersmith One;
+	width: 400px;
+}
+	
+.event_info{
+
+	margin-top: 50px;
+	text-align: center;
+	font-family: Pontano Sans;
+	font-size: 30px;
+
+}
+
+

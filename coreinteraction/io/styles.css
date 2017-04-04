@@ -42,7 +42,6 @@
 	display: none;
 	position: absolute;
 	z-index: 150;
-	margin: -2;
 }
 
 #spinning{
@@ -144,12 +143,61 @@ h1{
 
 #hard:hover {
 
-	background-color: #ec786c;
+	background-color: #f86459;
 
 }
 
 #easy:hover {
-	background-color: #6acf84;
+	background-color: #62f284;
 }
 
+#toPin {
+	color: white;
+	font-family: sans-serif;
+	font-size: 50px;
+	position: absolute;
+	top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 400;
+    display: none;
 
+}
+
+#winner{
+	display: none;
+	position: absolute;
+	top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    margin: 20px;
+}
+
+#loser {
+	display: none;
+	position: absolute;
+	top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    margin: 20px;
+}
+
+#restart {
+	font-family: sans-serif;
+	font-size: 30px;
+	/*background-color: black*/
+	color: white;
+	background-color: black;
+	height: 60px;
+	width: 180px;
+	text-align: center;
+	position: absolute;
+	top: 60%;
+	left: 10%; 
+	display: none;
+}
+
+#restart:hover{
+	background-color: #695de5;
+}

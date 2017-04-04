@@ -17,13 +17,15 @@ var height = window.innerHeight;
 var horizontal = dot.offsetLeft; 
 var vertical = dot.offsetTop;
 
-var xdif = (width - horizontal) / 2; 
-var ydif = (height - vertical) / 2; 
+var finalHorizontal = 0;
+var finalVertical = 0;
 
-var redLeft = horizontal - xdif;
-var redRight = horizontal + xdif;
-var redUp = vertical - ydif; 
-var redDown = vertical + xdif;
+
+var c = Math.abs(horizontal - finalHorizontal);
+var d = Math.abs(vertical - finalVertical); 
+var finalDistance = c + d;
+
+
 
 var a = Math.abs(x - horizontal);
 var b = Math.abs (y - vertical);
@@ -33,7 +35,18 @@ var easy = document.getElementById("easy");
 var hard = document.getElementById("hard");
 
 var instructions = document.getElementById("instructions");
+var restart = document.getElementById("restart");
 
+var boo = new Audio ();
+boo.src = "img/boo.mp3"
+var yay = new Audio ();
+yay.src = "img/yay.mp3"
+var whirl = new Audio ();
+whirl.src = "img/whirl.mp3"
+var toPin = document.getElementById("toPin");
+
+var winner = document.getElementById("winner");
+var loser = document.getElementById("loser");
 
 
 window.addEventListener("mousemove", function(e){
@@ -42,6 +55,8 @@ window.addEventListener("mousemove", function(e){
 
 	tail.style.top = e.clientY - 12 + "px";
     tail.style.left = e.clientX - 24 + "px";
+
+    // console.log(x, y);
 
 })
 
@@ -118,6 +133,7 @@ window.addEventListener("keydown", function(e) {
 	if(e.keyCode == 32){
 		spinning.style.display = "inline";
 		instructions.style.display = "none";
+		whirl.play();
 	}
 
 
@@ -129,6 +145,8 @@ window.addEventListener("keyup", function(e) {
 		spinning.style.display = "none";
 		easy.style.display = "inline";
 		hard.style.display = "inline";
+		whirl.pause();
+
 
 	}
 
@@ -141,6 +159,13 @@ easy.addEventListener("click", function(e){
 
 	easy.style.display = "none";
 	hard.style.display = "none";
+
+	toPin.style.display = "inline";
+		setTimeout(function(){
+
+		toPin.style.display = "none"; 
+
+}, 2000)
 })
 
 hard.addEventListener("click", function(e){
@@ -148,6 +173,13 @@ hard.addEventListener("click", function(e){
 	tail.style.display = "inline";
 	easy.style.display = "none";
 	hard.style.display = "none";
+
+	toPin.style.display = "inline";
+	setTimeout(function(){
+
+		toPin.style.display = "none"; 
+
+}, 1500)
 })
 
 
@@ -161,6 +193,7 @@ if (donkey.style.display == "inline") {
 	tail.style.display = "none";
 	spinning.style.display = "none";
 }
+
 
 
 
@@ -186,15 +219,62 @@ setTimeout(function(){
 	wagging.style.display = "block";
 	wagging.style.top = e.y + "px";
  	wagging.style.left = e.x - 200 + "px";
+ 	// wagging.load();
 
+ 	setTimeout(function(){
+ 		tailX = e.clientX -20;
+ 		tailY = e.clientY + 9;
+
+ 		wagging.style.display = "none";
+ 		final.style.display = "inline";
+ 		final.style.top = tailY + "px";
+ 		final.style.left = tailX +"px";
+
+ 		restart.style.display = "inline";
+
+
+ 	},2340)
 
 	donkey.style.display = "inline"; 
 	blindfold.style.display="none";
+
+	horizontal = dot.offsetLeft; 
+ 	vertical = dot.offsetTop;
+
+	spinning.style.display = "none";
+
+	finalHorizontal = e.clientX
+	finalVertical = e.clientY
+
+	c = Math.abs(finalHorizontal - horizontal);
+	d = Math.abs(finalVertical - vertical); 
+	finalDistance = c + d;
+
+	// console.log(finalDistance);
+
+	if (c < 20 && d < 40) {
+		yay.play();
+		winner.style.display = "inline";
+	}
+
+	else {
+		boo.play();
+		loser.style.display = "inline";
+	}
+
+	
+
+	console.log(finalHorizontal , finalVertical);
+	console.log(horizontal , vertical);
+	console.log(c, d);
 
 
 });
 
 
+restart.addEventListener("click", function(e){
 
+	window.location.reload();
+});
 
 

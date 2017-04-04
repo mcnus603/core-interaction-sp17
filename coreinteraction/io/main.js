@@ -29,9 +29,11 @@ var a = Math.abs(x - horizontal);
 var b = Math.abs (y - vertical);
 var distance = a + b;
 
+var easy = document.getElementById("easy");
+var hard = document.getElementById("hard");
+
 var instructions = document.getElementById("instructions");
 
-var sound1 = document.getElementById("sound1");
 
 
 window.addEventListener("mousemove", function(e){
@@ -42,6 +44,7 @@ window.addEventListener("mousemove", function(e){
     tail.style.left = e.clientX - 24 + "px";
 
 })
+
 
 //tail as mouse 
 
@@ -61,17 +64,8 @@ function tailAndColor(e) {
 	b = Math.abs (y - vertical);
 	distance = a + b;
 
-
     tail.style.top = e.clientY - 12 + "px";
     tail.style.left = e.clientX - 24 + "px";
-   
-    // if (distance < 17) {
-    // 	blindfold.style.backgroundColor = "rgb(255," + distance * 15 + "," + distance * 15 + ")";
-    // } else  {
-
-    // if (distance > 17) {	
-    // 	blindfold.style.backgroundColor = "rgb(" + Math.abs(255 - (distance * 15)) + "," + Math.abs(255 -(distance * 15)) + ", 255)";
-    // }
 
     	if (distance > 255) {	
     		blindfold.style.backgroundColor = "rgb(" + Math.abs(510-distance) + "," + Math.abs(510-distance) + ", 255)";
@@ -90,32 +84,12 @@ function tailAndColor(e) {
     	if (distance > 510) {
     		blindfold.style.backgroundColor = "rgb(0, 0, 255)";
 
-
-    // console.log (blindfold.style.backgroundColor);
-    console.log(distance);
     }
     
 
 };
 
-
-
-// if (distance < 17) {
-
-// }
-
-
-// } else {
-
-// 	window.addEventListener("mousemove", function(e){
-
-// 		blindfold.style.backgroundColor = "rgb(" + distance * 15 + "," + distance * 15 + ", 255)";
-// 	});
-// }
-
-
-
-//math 
+//resizing
 
 function onResize(e){
 
@@ -138,12 +112,6 @@ function onResize(e){
 
 }
 
-
-window.addEventListener("resize", onResize);
-
-
-
-
 //pressing spacebar
 
 window.addEventListener("keydown", function(e) {
@@ -152,25 +120,44 @@ window.addEventListener("keydown", function(e) {
 		instructions.style.display = "none";
 	}
 
+
 });
 
 window.addEventListener("keyup", function(e) {
 	if(e.keyCode == 32){
 
 		spinning.style.display = "none";
-		tail.style.display = "inline";
-		window.addEventListener("mousemove",tailAndColor);
+		easy.style.display = "inline";
+		hard.style.display = "inline";
 
 	}
 
 });
 
-if (donkey.style.display = "block") {
+easy.addEventListener("click", function(e){
+
+	window.addEventListener("mousemove",tailAndColor);
+	tail.style.display = "inline";
+
+	easy.style.display = "none";
+	hard.style.display = "none";
+})
+
+hard.addEventListener("click", function(e){
+
+	tail.style.display = "inline";
+	easy.style.display = "none";
+	hard.style.display = "none";
+})
+
+
+
+if (donkey.style.display == "block") {
 	tail.style.display = "none";
 	spinning.style.display = "none";
 }
 
-if (donkey.style.display = "inline") {
+if (donkey.style.display == "inline") {
 	tail.style.display = "none";
 	spinning.style.display = "none";
 }
@@ -191,7 +178,8 @@ setTimeout(function(){
 
 
 //when the tail is pined
-	window.addEventListener("click", function(e){
+
+	tail.addEventListener("click", function(e){
 
 	tail.style.display = "none";
 
@@ -203,10 +191,10 @@ setTimeout(function(){
 	donkey.style.display = "inline"; 
 	blindfold.style.display="none";
 
-	document.sound1.play(true);
-
 
 });
+
+
 
 
 

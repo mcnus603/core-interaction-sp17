@@ -109,4 +109,47 @@ h1{
 	float: left;
 }
 
+#easy {
+	font-family: sans-serif;
+	color: black;
+	font-size: 60px;
+	top: 200px;
+	position: absolute;
+	left: 300px;
+	z-index: 400;
+	display: none;
+	border:2px;
+	height: 75px;
+	width: 180px;
+	background-color: #3d9654;
+	text-align: center; 
+}
+
+#hard {
+	font-family: sans-serif;
+	color: black;
+	font-size: 60px;
+	top: 200px;
+	position: absolute;
+	right: 300px;
+	z-index: 400;
+	display: none;
+	border:2px;
+	height: 75px;
+	width: 180px;
+	background-color: #e83229;
+	text-align: center; 
+
+}
+
+#hard:hover {
+
+	background-color: #ec786c;
+
+}
+
+#easy:hover {
+	background-color: #6acf84;
+}
+
 

@@ -129,6 +129,7 @@ function onResize(e){
 
 //pressing spacebar
 
+
 window.addEventListener("keydown", function(e) {
 	if(e.keyCode == 32){
 		spinning.style.display = "inline";
@@ -149,8 +150,11 @@ window.addEventListener("keyup", function(e) {
 
 
 	}
-
 });
+
+
+
+
 
 easy.addEventListener("click", function(e){
 

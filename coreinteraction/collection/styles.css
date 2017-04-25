@@ -1,0 +1,34 @@
+body{
+	margin: 0;
+}
+.letterBox{
+	width: 19vw;
+	height: 19vw;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+	margin-top: 1%;
+	background-color: black;
+	float: left;
+
+}
+
+
+@media (max-width: 750px) {
+	.letterBox{
+		width: 32%;
+		margin-right: 0.5%;
+		margin-left: 0.5%;
+		margin-top: 1%;
+
+	}
+}
+
+@media (max-width: 414px) {
+	.letterBox{
+		width: 99%;
+		margin-right: 0.5%;
+		margin-left: 0.5%;
+		margin-top: 1%;
+
+	}
+}

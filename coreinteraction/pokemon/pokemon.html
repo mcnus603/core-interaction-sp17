@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Pokemon
+	</title>
+	<script src="underscore-min.js"></script>
+	<script src="pokemon.js"></script>
+
+</head>
+<body>
+	<label>
+		Select sort mode...
+	</label>
+	<select id="sort">
+		<option>
+			Name
+		</option>
+		<option>
+			Number
+		</option>
+	</select>
+	<label>
+		Select filter...
+	</label>
+	<select id="filter">
+		<option>
+			Water
+		</option>
+		<option>
+			Fire
+		</option>
+		<option>
+			Poison
+		</option>
+
+	</select>
+
+	<div id = "holder">
+	</div>
+	<script>
+		
+		var sortSelect = document.getElementById("sort");
+		var filterSelect = document.getElementById("filter");
+		var sortMode = "name";
+		var filterMode = "Water";
+
+		sortSelect.addEventListener("change", function(e){
+			if (sortSelect.value == "Name") {
+				sortMode = "name";
+			} else if (sortSelect.value == "Number"){
+				sortMode = "id";
+			}
+			update();
+		});
+
+		filterSelect.addEventListener("change", function(e){
+			filterMode = filterSelect.value;
+			update();
+		})
+
+		function update (){
+			var filtered = _.filter(pokemon, function(p){
+				return p.type.includes(filterMode);
+		 	});
+
+			var sorted = _.sortBy(filtered, sortMode);
+			var holder = document.getElementById("holder");
+			
+			holder.innerHTML = "";
+
+
+			for (var i = 0; i < pokemon.length; i++) {
+				var pokemonText = sorted[i].id + ":" + sorted[i].name;
+				var myPokemon = document.createElement("div");
+				myPokemon.innerHTML = pokemonText;
+				holder.appendChild(myPokemon);
+			}
+		}
+
+		update();
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

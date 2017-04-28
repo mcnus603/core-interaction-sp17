@@ -2,20 +2,46 @@ body{
 	margin: 0;
 }
 .letterBox{
-	width: 19vw;
-	height: 19vw;
-	margin-right: 0.5%;
-	margin-left: 0.5%;
-	margin-top: 1%;
-	background-color: black;
+	width: 18vw;
+	height: 18vw;
+	margin-right: 0.5vw;
+	margin-left: 0.5vw;
+	margin-top: 1vw;
+	background-color: white;
 	float: left;
 
 }
 
+#container {
+	padding-top: 30px;
+	width: 95vw;
+	padding-right: 2.5vw;
+	padding-left: 2.5vw; 
+}
+
+body{
+	background-color: #F4F4F4;
+	margin: 0;
+	padding-bottom: 1000px;
+}
+
+
+.growing {
+	width: 56vw;
+	 -webkit-transition: width 1s; 
+    transition: width 1s;
+}
+
+.shrinking {
+	width: 18vw;
+	 -webkit-transition: width 1s; 
+    transition: width 1s;
+}
 
 @media (max-width: 750px) {
 	.letterBox{
-		width: 32%;
+		width: 32vw;
+		height: 32vw;
 		margin-right: 0.5%;
 		margin-left: 0.5%;
 		margin-top: 1%;
@@ -25,10 +51,19 @@ body{
 
 @media (max-width: 414px) {
 	.letterBox{
-		width: 99%;
+		width: 99vw;
+		height: 99vw;
 		margin-right: 0.5%;
 		margin-left: 0.5%;
 		margin-top: 1%;
 
 	}
 }
+
+#filter {
+	padding:-10px;
+	position: absolute;
+	right: 5vw;
+	top: 10px;
+}
+

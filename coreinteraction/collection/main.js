@@ -28,16 +28,29 @@ _.each(allTheDivs, function(individual, index){
 		individual.style.backgroundColor = "#F4F4F4";
 	}
 
+	//linking out
+
+
 //COLUMN 1
 	if (individual.id % 5 == 1) {
 		individual.addEventListener("click", function(){
 			$(individual).addClass ("growing");
 			$(individual).removeClass ("shrinking");
+
+			if ($(individual).hasClass) {
+				individual.addEventListener("click", function(){
+					window.location.href = "definition.html" ;
+					console.log("hello");
+				
+				});
+			}
+				
 		});
 		individual.addEventListener("mouseleave", function(){
 			$(individual).addClass ("shrinking");
 			$(individual).removeClass ("growing");
 			individual.style.boxShadow = "none";
+
 		});
 	}
 //COLUMN 2
@@ -46,6 +59,14 @@ _.each(allTheDivs, function(individual, index){
 		individual.addEventListener("click", function(){
 			$(individual).addClass ("growing");
 			$(individual).removeClass ("shrinking");
+
+			if ($(individual).hasClass) {
+				individual.addEventListener("click", function(){
+					window.location.href = "definition.html" ;
+					console.log("hello");
+				
+				});
+			}
 		});
 		individual.addEventListener("mouseleave", function(){
 			$(individual).addClass ("shrinking");
@@ -60,6 +81,13 @@ _.each(allTheDivs, function(individual, index){
 		individual.addEventListener("click", function(){
 			$(individual).addClass ("growing");
 			$(individual).removeClass ("shrinking");
+			if ($(individual).hasClass) {
+				individual.addEventListener("click", function(){
+					window.location.href = "definition.html" ;
+					console.log("hello");
+				
+				});
+			}
 		});
 		individual.addEventListener("mouseleave", function(){
 			$(individual).addClass ("shrinking");
@@ -79,6 +107,13 @@ _.each(allTheDivs, function(individual, index){
 			var searchselector = "#" + (individual.id - 2) + ", #" + (individual.id - 1) ;
 			var removed = $(searchselector).detach();
 			removed.insertAfter($("#" + individual.id));
+			if ($(individual).hasClass) {
+				individual.addEventListener("click", function(){
+					window.location.href = "definition.html" ;
+					console.log("hello");
+				
+				});
+			}
 		});
 		individual.addEventListener("mouseleave", function(){
 			$(individual).addClass ("shrinking");
@@ -99,31 +134,27 @@ _.each(allTheDivs, function(individual, index){
 
 //COLUMN 5
 
-	if (individual.id % 5 == 0) {
-
+		if (individual.id % 5 == 0) {
 		individual.addEventListener("click", function(){
 			$(individual).addClass ("growing");
 			$(individual).removeClass ("shrinking");
 			var searchselector = "#" + (individual.id - 2) + ", #" + (individual.id - 1) ;
 			var removed = $(searchselector).detach();
 			removed.insertAfter($("#" + individual.id));
-			if ($(".letterBox").hasClass("growing")) {
+			if ($(individual).hasClass) {
 				individual.addEventListener("click", function(){
-					
+					window.location.href = "definition.html" ;
+					console.log("hello");
+				
 				});
-	}
-
-
+			}
 		});
-
 		individual.addEventListener("mouseleave", function(){
 			$(individual).addClass ("shrinking");
 			$(individual).removeClass ("growing");
-
 			var searchselector = "#" + (individual.id - 2) + ", #" + (individual.id - 1) ;
 			var removed = $(searchselector).detach();
 			removed.insertBefore($("#" + individual.id));
-
 			var theOneToTheRight = "#" + (individual.id + 1);
 			var putBack = $(individual.id).detach();
 			individual.style.boxShadow = "none";
@@ -135,12 +166,24 @@ _.each(allTheDivs, function(individual, index){
 
 	}
 
+			 // var removed = $(searchselector).detach();
+			 // removed.insertBefore($("#" + individual.id));
+
+			// var theOneToTheRight = "#" + (individual.id + 1);
+			// var putBack = $(individual.id).detach();
+			// individual.style.boxShadow = "none";
+
+			// putBack.insertBefore($("#" + theOneToTheRight)); 
+});
+
+
+
 	// if (individual.innerWidth == "56vw") {
 	// 	console.log("hello");
 	// }
 
 
-});
+
 
 
 	

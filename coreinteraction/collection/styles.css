@@ -1,42 +1,130 @@
 body{
 	margin: 0;
+	background-color: #F4F4F4;
 }
 .letterBox{
 	width: 18vw;
 	height: 18vw;
-	margin-right: 0.5vw;
-	margin-left: 0.5vw;
-	margin-top: 1vw;
+	margin-top: 6px;
 	background-color: white;
 	float: left;
+	color: black;
+	font-family: "Helvetica";
+	font-size: 75px;
+	text-align: center;
+}
+
+.copy{
+	width: 0;
+	height: 0;
+	margin: 0;
+/*	background-color: #F4F4F4;
+*/	float: left;
+	color: black;
+	font-family: "Helvetica";
+	font-size: 75px;
+	text-align: center;
+
+
+
+}
+
+.show{
+	margin-top: 6px;
+	width: 18vw;
+	height: 18vw;
+}
+
+.hide {
+	margin-top: 6px;
+	width: 0px;
+}
+
+.squareshrink {
+	float: left;
+	width: 0!important;
+	margin-top: : 6px!important;
+	-webkit-transition: width 1.2s linear; 
+    transition: width 1.2s linear;
+
+}
+
+.squaregrow {
+	float: left;
+	height: 18vw!important;
+	width: 18vw!important;
+	margin-top: 6px!important;
+	-webkit-transition: width 1.2s linear; 
+    transition: width 1.2s linear;
+
+}
+
+#extraSpace {
+	height: 18vw;
+	width: 18vw;
+	background-color: #F4F4F4; 
+	float: left;
+}
+
+
+
+.all{
+	overflow: hidden;
+	box-shadow: 0px 0px 0px 6px #F4F4F4 inset!important;
+	margin-top: 6px;
+}
+
+.all:hover {
+	box-shadow: 0px 0px 2px 6px #E5E5E5 inset!important;
 
 }
 
 #container {
-	padding-top: 30px;
-	width: 95vw;
-	padding-right: 2.5vw;
-	padding-left: 2.5vw; 
+	padding-top: 50px;
+	width: 90vw;
+	padding-right: 5vw;
+	padding-left: 5vw; 
+/*	height: 140vw;*/
+/*	overflow: hidden;
+*/	height: 90vw;
 }
 
-body{
-	background-color: #F4F4F4;
-	margin: 0;
-	padding-bottom: 1000px;
+#definitionPage {
+/*	padding-top: 10px;*/
+	width: 100vw;
+
+	display: none;
+
+/*	height: 75vw;*/
+	/*overflow: hidden;*/
 }
 
+.smallerImage{
+	width: 18vw;
+	height: 18vw;
+	z-index: 100;
+}
+
+.largerImage{
+	width: 56vw;
+	height: 18vw;
+	z-index: 100;
+}
 
 .growing {
-	width: 56vw;
+	width: 54vw;
 	 -webkit-transition: width 1s; 
     transition: width 1s;
+    box-shadow: 0px 0px 0px 6px #F4F4F4 inset!important;
 }
 
 .shrinking {
 	width: 18vw;
-	 -webkit-transition: width 1s; 
-    transition: width 1s;
+	 -webkit-transition: width 2.4s linear; 
+    transition: width 2.4s linear;
 }
+
+
 
 @media (max-width: 750px) {
 	.letterBox{
@@ -87,41 +175,105 @@ body{
 }
 
 .definitionContainer {
-/*	padding-top: 4vw;*/
-	padding-right: 22vw;
-	padding-left: 22vw;
-	width:56vw;
-	padding-top: 4vw;
-	/*height: 32vw;*/
+	padding-right: 23vw;
+	padding-left: 23vw;
+	width:54vw;
+	margin-top: -50px;
+	height: 54vw;
+	overflow: hidden;
+}
+
+.metadataContainer {
+	padding-right: 23vw;
+	padding-left: 23vw;
+	width:54vw;
+	margin-top: 4vw;
+	height: 100px;
+
+}
+
+img{
+	height: 18vw;
+	width: auto;
+	box-shadow: 0px 0px 0px 6px #F4F4F4 inset!important;
+
+}
+
+.leftContainer {
+	width: 25vw;
+	margin-right: 2vw;
+	float: left;
+}
+
+.righContainer {
+	width: 25vw;
+	margin-left: 2vw;
+	float: left;
 }
 
 .word{
 	font-size: 100px;
-	font-family: Helvetica;
+	color: white;
+	/*font-family: Helvetica;*/
 	text-align: center;
 	background-color: black;
 	height: 18vw;
-	width: 56vw;
+	width: 54vw;
+	margin-bottom: 20px;
 }
+.theWordText{
+	width: 25vw;
+	float: left;
+/*	background-color: pink;*/
+/*	font-family: Helvetica;*/
+	margin-bottom: 10px;
 
+}
 .definition{
 	width: 25vw;
-	padding-left: 1vw;
 	float: left;
+/*	background-color: blue;*/
+	/*font-family: Helvetica;*/
+	margin-bottom: 10px;
+	font-weight: bold;
 }
 .pronunciation {
-	padding-top: 30px;
+/*	padding-top: 30px;*/
 	width: 25vw;
-	padding-left: 1vw;
-	float: both;
+	float:left;
+	font-style: italic;
+/*	background-color: red;*/
+	margin-bottom: 10px;
+	font-family: Helvetica;
 
 }
 
 .quote {
 	width: 25vw;
-	padding-left: 1vw;
 	float: left;
-
-
+/*	background-color: yellow;*/
+	margin-bottom: 10px;
+/*	font-family: Helvetica;*/
+	height: 18vw;
+	overflow: scroll;
 
 }
+
+.dim {
+	opacity: 0.1;
+}
+
+.wordClass{
+	width: 25vw;
+	float: left;
+/*	background-color: green;
+*/	margin-bottom: 10px;
+	font-family: Helvetica;
+/*	margin-right: 1.5vw;*/
+
+}
+
+
+
+
+

@@ -1,3 +1,142 @@
 h1 {
 	font-family: helvetica;
+	font-size: 75px;
+	margin-left: 5vw;
 }
+
+.projectBox {
+	background-color: pink;
+	height:20vw;
+	width: 33vw;
+/*	float: left;*/
+	margin: 1vw;
+	display: inline-block;
+}
+
+#projects{
+	width: 90vw;
+	height: 30vw;
+	margin-left: 5vw;
+	margin-right: 5vw; 
+/*	background-color: blue;
+*/	overflow-y: hidden;
+	overflow-x: scroll;
+	white-space:nowrap
+
+}
+
+.labelContainer {
+
+	width: 90vw;
+/*	height: 5vw;*/
+/*	margin-left: 5vw;
+	margin-right: 5vw; */
+	/*background-color: red;*/
+/*	overflow-y: hidden;
+	overflow-x: scroll;*/
+	white-space:nowrap
+
+}
+
+.projectLabel {
+	background-color: white;
+	height:3vw;
+	width: 33vw;
+	color: white;
+/*	display: none;*/
+	margin: 1vw;
+	display: inline-block;
+	font-size: 20px;
+
+}
+
+#collectionLabel{
+	width: 33vw;
+/*	display: none;
+*/}
+#wireframeLabel {
+	width: 33vw;
+/*	display: none;
+*/}
+
+#ioProjectLabel{
+	width: 33vw;
+/*	display: none;
+*/}
+#interfaceRedesignLabel{
+	width: 33vw;
+/*	display: none;
+*/}
+#filmFestivalLabel{
+	width: 33vw;
+/*	display: none;
+*/}
+#textAdventureLabel{
+	width: 33vw;
+/*	display: none;*/
+}
+#creativeComputingLabel{
+	width: 33vw;
+/*	display: none;
+*/}
+
+img{
+	height: 20vw;
+	width: auto
+}
+
+/*.project:hover {
+	box-shadow: 10px 10px 5px #888888;
+}
+*/
+img:hover {
+	/*box-shadow: 10px 10px 5px #888888;*/
+}
+
+
+p{
+	font-family: helvetica;
+	font-size: 30px;
+	margin-top: 0;
+	font-weight: 900;
+	margin-left: 1vw;
+
+/*	margin-left: 25px;
+	margin-bottom: 5px;*/
+}
+
+#readingTitle{
+	font-family: helvetica;
+	font-size: 30px;
+	float: left;
+	margin-right: 15px;
+
+}
+
+#readings{
+	margin-left: 5vw;
+	margin-top: 5vw;
+
+
+}
+
+.number{
+	font-family: helvetica;
+	font-size: 30px;
+	float: left;
+	color: black;
+	margin-left: 15px;
+	margin-right: 10px;
+	font-weight: 900;
+}
+
+.number:hover{
+	text-decoration: underline black;
+	
+
+}
+
+
+
+
+

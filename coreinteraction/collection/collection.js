@@ -9,6 +9,7 @@ var collection = [
 	"pronunciation" :"[at-uh-vis-tik] ",
 	"single": "images/a1.jpg",
 	"whole": "images/atavistic.jpg",
+	"color": "cacbc9",
 },
 {
 	"letternumber": "b1",
@@ -20,6 +21,7 @@ var collection = [
 	"pronunciation" :"[bal-ee-hoo]",
 	"single": "images/b2.jpg",
 	"whole": "images/ballyhooed.jpg",
+	"color" : "4dd9ff",
 
 
 },
@@ -34,6 +36,7 @@ var collection = [
 	"pronunciation" :"[kuh-ruhs-kuh nt, kawr-uh s-, kor-]",
 	"single": "images/c1.jpg",
 	"whole": "images/courscant.jpg",
+	"color" : "070707",
 
 },
 
@@ -47,6 +50,7 @@ var collection = [
 	"pronunciation" :"[dahy-uh-fuh-ret-ik]",
 	"single": "images/d1.jpg",
 	"whole": "images/diaphoretic.jpg",
+	"color" : "85c3ec", 
 
 },
 
@@ -61,6 +65,7 @@ var collection = [
 	"pronunciation" :"[ih-ruhm-puh nt] ",
 	"single": "images/e1.jpg",
 	"whole": "images/erumpent.jpg",
+	"color" : "eccbbc", 
 
 },
 
@@ -74,6 +79,7 @@ var collection = [
 	"pronunciation" :"[fee-bruh l, feb-ruh l]",
 	"single": "images/f1.jpg",
 	"whole": "images/febrile.jpg",
+	"color" : "f15941", 
 
 },
 
@@ -88,6 +94,7 @@ var collection = [
 	"pronunciation" :"[green-swawrd] ",
 	"single": "images/g1.jpg",
 	"whole": "images/greensward.jpg",
+	"color" : "8cc63e", 
 },
 
 
@@ -101,6 +108,7 @@ var collection = [
 	"pronunciation" :"[hal-see-uh n] ",
 	"single": "images/h1.jpg",
 	"whole": "images/halcyon.jpg",
+	"color" : "f0a4b0", 
 
 },
 
@@ -114,6 +122,7 @@ var collection = [
 	"pronunciation" :"[in-tal-yoh, -tahl-]",
 	"single": "images/i1.jpg",
 	"whole": "images/intaglioed.jpg",
+	"color" : "c8d57d", 
 
 },
 
@@ -129,6 +138,7 @@ var collection = [
 	"pronunciation" :"[jouns]",
 	"single": "images/j1.jpg",
 	"whole": "images/jounce.jpg",
+	"color" : "9cd8f4", 
 
 }, 
 
@@ -145,6 +155,7 @@ var collection = [
 	"pronunciation" :"[kiz-mit, -met, kis-] ",
 	"single": "images/k1.jpg",
 	"whole": "images/kismet.jpg",
+	"color" : "cfdccb", 
 
 }, 
 
@@ -161,6 +172,7 @@ var collection = [
 	"pronunciation" :"[loh-kwey-shuh s] ",
 	"single": "images/l1.jpg",
 	"whole": "images/loquacious.jpg",
+	"color" : "efcfe4", 
 
 }, 
 
@@ -176,6 +188,7 @@ var collection = [
 	"pronunciation" :"[mot-l]",
 	"single": "images/m1.jpg",
 	"whole": "images/mottle.jpg",
+	"color" : "000000", 
 
 }, 
 
@@ -191,6 +204,7 @@ var collection = [
 	"pronunciation" :"[ney-kree-uh s]",
 	"single": "images/n1.jpg",
 	"whole": "images/nacreous.jpg",
+	"color" : "ddf1f2", 
 
 }, 
 
@@ -206,6 +220,7 @@ var collection = [
 	"pronunciation" :"[os-ten-tey-shuh s, -tuh n-]",
 	"single": "images/o1.jpg",
 	"whole": "images/ostentatious.jpg",
+	"color" : "9260a9", 
 
 }, 
 
@@ -221,6 +236,7 @@ var collection = [
 	"pronunciation" :"[pan-uh-plee]",
 	"single": "images/p1.jpg",
 	"whole": "images/panoply.jpg",
+	"color" : "f5f4b1", 
 
 }, 
 
@@ -236,6 +252,7 @@ var collection = [
 	"pronunciation" :"[koin, kwoin] ",
 	"single": "images/q1.jpg",
 	"whole": "images/quoins.jpg",
+	"color" : "a6b8b7", 
 
 }, 
 
@@ -252,6 +269,7 @@ var collection = [
 	"pronunciation" :"[rey-zoh, ruh-] ",
 	"single": "images/r1.jpg",
 	"whole": "images/reseau.jpg",
+	"color" : "d1d2d4", 
 
 }, 
 
@@ -267,6 +285,7 @@ var collection = [
 	"pronunciation" :"[sak-er-in, -uh-reen, -uh-rahyn]",
 	"single": "images/s1.jpg",
 	"whole": "images/saccharine.jpg",
+	"color" : "fabebe", 
 
 }, 
 
@@ -282,6 +301,7 @@ var collection = [
 	"pronunciation" :"[ter-uh-toid]",
 	"single": "images/t1.jpg",
 	"whole": "images/teratoid.jpg",
+	"color" : "a6d08e", 
 
 }, 
 
@@ -297,6 +317,7 @@ var collection = [
 	"pronunciation" :"[uhn-juh-leyt, uhn-dyuh-, -duh-]",
 	"single": "images/u1.jpg",
 	"whole": "images/undulate.jpg",
+	"color" : "22215b", 
 
 }, 
 
@@ -312,6 +333,7 @@ var collection = [
 	"pronunciation" :"[vur-muh-fawrm] ",
 	"single": "images/v1.jpg",
 	"whole": "images/vermiform.jpg",
+	"color" : "757aba", 
 
 }, 
 
@@ -327,6 +349,7 @@ var collection = [
 	"pronunciation" :"[win-suh m]",
 	"single": "images/w1.jpg",
 	"whole": "images/winsome.jpg",
+	"color" : "d486ba", 
 
 }, 
 
@@ -342,6 +365,7 @@ var collection = [
 	"pronunciation" :"[zi-rog-ruh-fee] ",
 	"single": "images/x1.jpg",
 	"whole": "images/xerography.jpg",
+	"color" : "ffffff", 
 
 }, 
 
@@ -357,6 +381,7 @@ var collection = [
 	"pronunciation" :"[yurn]",
 	"single": "images/y1.jpg",
 	"whole": "images/yearn.jpg",
+	"color" : "c0e7ee", 
 
 }, 
 
@@ -372,6 +397,7 @@ var collection = [
 	"pronunciation" :"[zee-nith]",
 	"single": "images/z1.jpg",
 	"whole": "images/zenith.jpg",
+	"color" : "ab4c9d", 
 
 }, 
 
@@ -387,6 +413,7 @@ var collection = [
 	"pronunciation" :"[uh-trish-uh n]",
 	"single": "images/a2.jpg",
 	"whole": "images/attrition.jpg",
+	"color" : "000000", 
 
 }, 
 
@@ -402,6 +429,7 @@ var collection = [
 	"pronunciation" :"[bal-ee-hoo]",
 	"single": "images/b2.jpg",
 	"whole": "images/ballyhooed.jpg",
+	"color" : "4dd9ff", 
 
 }, 
 
@@ -416,6 +444,7 @@ var collection = [
 	"pronunciation" :"[suh-rees, -reez]",
 	"single": "images/c2.jpg",
 	"whole": "images/cerise.jpg",
+	"color" : "c887b1", 
 
 }, 
 
@@ -430,6 +459,7 @@ var collection = [
 	"pronunciation" :"[dih-kliv-i-tee]",
 	"single": "images/d2.jpg",
 	"whole": "images/declivity.jpg",
+	"color" : "f3c4b4", 
 
 }, 
 

@@ -3,6 +3,7 @@ body{
 	background-color: #F4F4F4;
 }
 .letterBox{
+	box-shadow: 0px 0px 0px 6px #F4F4F4 inset!important;
 	width: 18vw;
 	height: 18vw;
 	margin-top: 6px;
@@ -15,6 +16,7 @@ body{
 }
 
 .copy{
+	box-shadow: 0px 0px 0px 6px #F4F4F4 inset!important;
 	width: 0;
 	height: 0;
 	margin: 0;
@@ -100,16 +102,16 @@ body{
 }
 
 .smallerImage{
-	width: 18vw;
+	width: auto;
 	height: 18vw;
 	z-index: 100;
-/*	box-shadow: 0px 0px 0px 6px #F4F4F4 inset!important;
-*/
+	box-shadow: 0px 0px 0px 6px #F4F4F4 inset!important;
+
 }
 
 .largerImage{
-	width: 56vw;
-	height: 18vw;
+	width: 75vw;
+	height: 25vw;
 	z-index: 100;
 }
 
@@ -177,10 +179,10 @@ body{
 }
 
 .definitionContainer {
-	padding-right: 23vw;
-	padding-left: 23vw;
-	width:54vw;
-	margin-top: -50px;
+	padding-right: 12.5vw;
+	padding-left: 12.5vw;
+	width:75vw;
+	margin-top: -150px;
 	height: 54vw;
 	overflow: hidden;
 }
@@ -195,8 +197,8 @@ body{
 }
 
 img{
-	height: 18vw;
-	width: auto;
+/*	height: 18vw;
+	width: auto;*/
 	box-shadow: 0px 0px 0px 6px #F4F4F4 inset!important;
 
 }
@@ -219,8 +221,8 @@ img{
 	/*font-family: Helvetica;*/
 	text-align: center;
 	background-color: black;
-	height: 18vw;
-	width: 54vw;
+	height: 25vw;
+	width: 75vw;
 	margin-bottom: 20px;
 }
 .theWordText{
@@ -262,7 +264,10 @@ img{
 }
 
 .dim {
-	opacity: 0.1;
+	 filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  opacity: 0.4;
 }
 
 .wordClass{
@@ -275,7 +280,36 @@ img{
 
 }
 
+.homepage {
+	width: 70vw;
+	height: auto;
+	margin-left: 15vw;
+	margin-top: 10vw;
+	z-index: 800;
+	position: fixed;
+
+}
 
 
+#onload {
+	height: 100%;
+	width: 100%;
+	background-color: #F4F4F4;
+	/*z-index: 700;*/
+	position: fixed;
+}
+
+#explaination {
+	z-index: 750;
+	color: black;
+	font-size: 20px;
+	font-family: Helvetica;
+	position: fixed;
+	top: 40vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+/*	top: */
+
+}
 
 

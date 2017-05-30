@@ -1,6 +1,3 @@
-//for individual look for if class list has that letternumber 
-// _(ELEMENT.classList).contains(letternumber);
-
 var alphabet = ['A', 'B','C','D','E', 'F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D']
 var container= document.getElementById("container");
 var holder= document.getElementById("holder");
@@ -8,14 +5,27 @@ var extraSpace = document.getElementById("extraSpace");
 var definitionPage = document.getElementById("definitionPage");
 var home = document.getElementById("home");
 var squares = document.getElementsByClassName("square"); 
+var clones = document.getElementsByClassName("copy");
+var allTheDivs = document.getElementsByClassName("letterBox");
+var everything = document.getElementsByClassName("all"); 
+var onloadContainer = document.getElementById("onloadContainer");
 
-// home.addEventListener("mouseover", function(){
 
-// 	// $(".square").style.boxShadow = "10px 10px 5px #black";
-// 	// squares.style.boxShadow = "10px 10px 5px #black";
-// });
 
-//MAKING ORIGINALS AND CLONES
+//ONLOAD FUNCTION 
+
+
+
+setTimeout(homepageFade,4000);
+
+
+function homepageFade () {
+	onloadContainer.style.display = "none";
+
+}
+
+
+//MAKING ORIGINALS AND CLONES AND SETTING IMAGES FOR ORIGINALS
 for (var i = 1; i < 31; i++) {
 
 	
@@ -24,102 +34,50 @@ for (var i = 1; i < 31; i++) {
 	container.appendChild(divToInsert);
 	divToInsert.className = "letterBox all";
 	divToInsert.id = i;
-	// addImages(); 
-
 
 	var copyDivToInsert =  document.createElement("div");
 	container.appendChild(copyDivToInsert);
 	copyDivToInsert.className = "copy all";
 	copyDivToInsert.id = i + "copy";
 
-	//this is where I am trying to append my image
-
 	var image = document.createElement("img");
 	image.src = collection[i-1].single;
 	$(image).addClass("smallerImage");
 
-	console.log(image.src);
+	// console.log(image.src);
 	var letterBox = document.querySelector(".letterBox"); 
 
 	var one = document.getElementById(i); 
 	one.appendChild(image);
 
+}
 
-	// var two = document.getElementById(i + "copy"); 
-	// two.appendChild(image);
+//SETTING IMAGES FOR CLONES
+for (var i = 1; i < 31; i++) {
 
-	
-
-	// img.style.width = "18vw";
-	// img.style.height = "18vw";
+	var image = document.createElement("img");
+	image.src = collection[i-1].single;
+	$(image).addClass("smallerImage");
+	var two = document.getElementById(i + "copy"); 
+	two.appendChild(image);
+	// console.log(two);
 
 }
 
-	// var newDiv = document.createElement("div"); 
-	// holders.appendChild(newDiv);
-
-
-
-
-
-
-
-// var letterBox = document.querySelector(".letterBox");
-
-// function addImages(individual_datapoint) {
-// 	individual.dataset.letternumber = collection[index].letternumber;
-// 	letterBox.innerHTML = '<img src =' + individual_datapoint[0].single + "/>";
-// }
-
-
-// var def = document.querySelector(".definition");
-// 	def.innerText = individual_datapoint[0].definition;
-
-
- 
-
-var clones = document.getElementsByClassName("copy");
-var allTheDivs = document.getElementsByClassName("letterBox");
-var everything = document.getElementsByClassName("all"); 
-
-
-
-
-
-
-
-
+//CLICKHANDLER
 
 function clickhandler(whichcolumn, individual) {
 
-	// console.log("click handler:", whichcolumn);
-
-	// var pictureOfWord = document.querySelector(".wordClass");
-	// individual.innerText = individual_datapoint[0].wordClass;
-
-
-
 	individual.addEventListener("mouseleave", mouseleavehandler);
-	// extraSpace.width = "54vw";s
-
+	
 	if ($(individual).hasClass("growing")) {
 
 	var theoneyouclickedon =_.where(collection, {letternumber: individual.dataset.letternumber});
-	console.log(theoneyouclickedon);
-
-
-		linkout(theoneyouclickedon);
-		addInfo(individual.id); 
+	linkout(theoneyouclickedon);
+	addInfo(individual.id); 
 
 
 	}
-
-
-
-
-
-
-
 
 	//COLUMN 1
 	if (individual.id % 5 == 1) {
@@ -151,7 +109,6 @@ function clickhandler(whichcolumn, individual) {
 
 		var removed = $(searchselector).detach();
 		removed.insertAfter($("#" + individual.id));
-		console.log(searchselector);
 	}
 
 	//COLUMN 5
@@ -171,17 +128,13 @@ function clickhandler(whichcolumn, individual) {
 
 
 
-
+//MOUSELEAVEHANDLER
 function mouseleavehandler(e) {
-
-
-	// console.log("mouse leave handler");
 
 	var individual = e.target;
 	var whichcolumn = individual.id % 5; 
 
 	individual.removeEventListener("mouseleave", mouseleavehandler);
-
 	individual.removeEventListener("click", linkout);
 
 	//COLUMN 1
@@ -221,8 +174,6 @@ function mouseleavehandler(e) {
 
 	}
 
-				// var firstSquaresToAnimate = "#" + (individual.id - (-3)) + ", #" + (individual.id - (-8)) + ", #" + (individual.id - (-13)) + ", #" + (individual.id - (-18)) + ", #" + (individual.id - (-23));
-					// console.log(firstSquaresToAnimate);
 	//COLUMN 2
 	if (whichcolumn == 2) {
 
@@ -301,9 +252,6 @@ function mouseleavehandler(e) {
 
 	}
 
-	//Reset/remove classes
-
-
 
 	//COLUMN 4
 
@@ -312,53 +260,84 @@ function mouseleavehandler(e) {
 		$(individual).removeClass ("growing");
 
 
+		//detaching and shit
 
 		var searchselectorOG = "#" + (individual.id - 2) + ", #" + (individual.id - 1) ;
-		var RemovedFirst =  "#" + (individual.id - 2) + "copy"; 
-
-
 		var removedOG = $(searchselectorOG).detach();
+
 		var theOneToTheRight = "#" + (individual.id - (-1));
 		var putBack = $(individual.id).detach();
 		putBack.insertBefore($(theOneToTheRight)); 
-
-
 		removedOG.insertBefore($("#" + individual.id));
-		var removedFirstCopy= $(RemovedFirst).detach();
-		removedFirstCopy.insertBefore($("#" + (individual.id - 2)));
-
+		
+		var RemovedFirst =  "#" + (individual.id - 2) + "copy"; 
 		var RemovedSecond =  "#" + (individual.id - 1) + "copy";
-		var removedSecondCopy= $(RemovedSecond).detach();
-		removedFirstCopy.insertBefore($("#" + (individual.id - 1)));
- 
 
-		individual.style.boxShadow = "none";
+		//calling the copies 
 
 
-		var theFirstSqaure = individual.id -2;
-		var theSecondSquare = individual.id -1; 
-
+		var theFirstSqaure = individual.id - 2;
+		var theSecondSquare = individual.id - 1; 
 		var firstCopy = document.getElementById(theFirstSqaure + "copy");
-		var SecondCopy = document.getElementById(theSecondSquare + "copy");
-		$(firstCopy).addClass("aFirstCopy");
-		$(SecondCopy).addClass("aSecondCopy");
-		$(firstCopy).addClass("show");
-		$(SecondCopy).addClass("show");
-
-
+		var secondCopy = document.getElementById(theSecondSquare + "copy");
 		var firstOriginal= document.getElementById(theFirstSqaure);
-		var SecondOriginal = document.getElementById(theSecondSquare);
+		var secondOriginal = document.getElementById(theSecondSquare);
+
+		$(firstCopy).addClass("aFirstCopy");
+		$(secondCopy).addClass("aSecondCopy");
+		$(firstCopy).addClass("show");
+		$(secondCopy).addClass("show");
 		$(firstOriginal).addClass("aFirstOriginal");
-		$(firstOriginal).addClass("aSecondOriginal");
+		$(secondOriginal).addClass("aSecondOriginal");
 		$(firstOriginal).addClass("hide");
-		$(SecondOriginal).addClass("hide");
+		$(secondOriginal).addClass("hide");
+
+		// for (var i = theSecondSquare; i < 29; i+=6) {
+		// 	var secondCopies = document.getElementById(i + "copy");
+		// 	$(secondCopies).addClass("show");
+		// 	$(secondCopies).addClass("aSecondCopy");
+
+		// 	var secondOriginals = document.getElementById(i);
+		// 	$(secondOriginals).addClass("hide");
+		// 	$(secondOriginals).addClass("aSecondOriginal");
+		// }
 
 
 
+
+		var theThirdSqaure = individual.id - (-1);
+
+		var thirdCopy = document.getElementById(theThirdSqaure + "copy"); 
+		var thirdOriginal = document.getElementById(theThirdSqaure); 
+
+
+
+		for (var i = theThirdSqaure; i < 29; i+= 5) {
+			var thirdCopies = document.getElementById(i + "copy");
+			$(thirdCopies).addClass("show");
+			$(thirdCopies).addClass("aThirdCopy");
+
+			var thirdOriginals = document.getElementById(i);
+			$(thirdOriginals).addClass("hide");
+			$(thirdOriginals).addClass("aThirdOriginal");
+		}
+
+
+
+
+
+		// $(thirdCopy).addClass("show");
+		// $(thirdCopy).addClass("thirdCopy"); 
+		// $(thirdOriginal).addClass("hide");
+		// $(thirdOriginal).addClass("thirdOriginal");
+
+
+		//timeouts
 		setTimeout(applyToFirstSquares, 5);
-		setTimeout(applyToSecondSquares, 1200);
-
+		setTimeout(applyToSecondSquares, 5);
+		setTimeout(resetCopies, 3000);
 		setTimeout(removeClasses, 3000);
+		setTimeout(applyToThirdSquares, 1200);
 	}
 
 	//COLUMN 5 
@@ -368,7 +347,7 @@ function mouseleavehandler(e) {
 		var firstToClose = "#" + (individual.id - 2);
 		var secondToClose = "#" + (individual.id - 1);
 
-		console.log(firstToClose, secondToClose);
+		// console.log(firstToClose, secondToClose);
 
 		$(individual).addClass ("shrinking");
 		$(individual).removeClass ("growing");
@@ -392,20 +371,11 @@ function mouseleavehandler(e) {
 
 //EACH ALL THE DIVS
 
-// _.each(clones, function(individual, index){
-// 	// individual.innerHTML = alphabet[index];
-// });
 
 _.each(allTheDivs, function(individual, index) {
 //SETTING STYLES FOR ORIGINALS
 
 	if (individual.id < 31) {
-		//individual.innerHTML = alphabet[index];
-		// image.src = "images/" + individual.id + ".jpg"
-		// individual.innerHTML = image.src
-
-
-
 		individual.addEventListener("mouseover", function(){
 			individual.style.boxShadow = "4px 4px 2px #DDDDDD"; 
 		});
@@ -416,27 +386,17 @@ _.each(allTheDivs, function(individual, index) {
 
 	individual.addEventListener("click", function(){
 		clickhandler(individual.id % 5, individual);
-		// console.log(clickhandler);
 	});
-
-	//MOUSELEAVE
 
 	individual.dataset.letternumber = collection[index].letternumber;
 
 });
 
-//link out function
 
+
+//LINKOUT
 function linkout(individual_datapoint) {
-
-
-
-
-
 	var thething = individual_datapoint[0];
-
-
-
 
 	var pron = document.querySelector(".pronunciation");
 	pron.innerText = individual_datapoint[0].pronunciation;
@@ -453,60 +413,47 @@ function linkout(individual_datapoint) {
 	var pictureOfWord = document.querySelector(".wordClass");
 	definitionWordClass.innerText = individual_datapoint[0].wordClass;
 
-
-	// var theWordText = document.querySelector(".theWordText");
-	// theWordText.innerText = individual_datapoint[0].word;
-
-	// var image = document.createElement("img");
-	// image.src = collection[i-1].whole; 
-
-
-		var pictureOfWord = document.querySelector(".word");
-		pictureOfWord.innerHTML = "<img src = '" + individual_datapoint[0].whole + "' class = 'largerImager'></img>";
-		// pictureOfWord.style.height = "18vw";
-		// pictureOfWord
-
-		// img.style.width = "56vw";
-		// img.style.height = "18vw";
-
-
-
-	
-
-	// pictureOfWord.appendChild(image);
-
+	var pictureOfWord = document.querySelector(".word");
+	pictureOfWord.innerHTML = "<img src = '" + individual_datapoint[0].whole + "' class = 'largerImage'></img>";
 
 	container.style.display = "none";
 	definitionPage.style.display = "inline-block";
 
 
+
+	document.body.style.backgroundColor = "#" + thething.color; 
+	var extraSpace = document.getElementById("extraSpace"); 
+	extraSpace.style.backgroundColor = "#" + thething.color; 
+
+
+	console.log(thething);
 		
 }
+
+
+//HOME BUTTON
 
 home.addEventListener("click", function() {
 	container.style.display = "inline-block";
 	definitionPage.style.display = "none";
+	document.body.style.backgroundColor = "#F4F4F4"; 
+	extraSpace.style.backgroundColor = "#F4F4F4"; 
+
+	
 
 }); 
 
 
-
-//contains 
-//if my collection contains adjectives give me the id of that
+//FUNCTIONZZZZ
 
 
-
-
-
-
-
-		// console.log("FROM THE EVENT", event.target.dataset.letternumber);
 function removeClasses() {
-	// document.querySelector("copy").width = "0";
 	$(".aFirstCopy").removeClass("squareshrink show aFirstCopy");
 	$(".aFirstOriginal").removeClass("squaregrow hide aFirstOriginal");
 	$(".aSecondOriginal").removeClass("squaregrow hide aSecondOriginal");
 	$(".aSecondCopy").removeClass("squareshrink show aSecondCopy");
+	$(".thirdOriginal").removeClass("squaregrow hide aSecondOriginal");
+	$(".thirdCopy").removeClass("squareshrink show aSecondCopy");
 }
 
 function applyToFirstSquares() {
@@ -520,14 +467,31 @@ function applyToSecondSquares() {
 	
 }
 
+function applyToThirdSquares() {
+	$(".aThirdCopy").addClass("squareshrink");
+	$(".aThirdOriginal").addClass("squaregrow");
+	
+}
+
+function resetCopies() {
+	var removedFirstCopy= $(RemovedFirst).detach();
+	removedFirstCopy.insertBefore($("#" + (individual.id - 2)));
+	var removedSecondCopy= $(RemovedSecond).detach();
+	removedFirstCopy.insertBefore($("#" + (individual.id - 1)));
+ 
+}
+
 var filterSelect = document.getElementById("filterSelect");
 var filterMode = "all";
 
 filterSelect.addEventListener("change", function(e){
 	filterMode = filterSelect.value;
 	update();
-	console.log(filterMode);
+	// console.log(filterMode);
 });
+
+
+//FILTERING
 
 function update () {
 
@@ -557,61 +521,27 @@ function grabWordsByClass(whichclass) {
 	addWordClassClasses(list);	
 }
 
-// var allTheAdjectives = 
-// var allTheNouns = _.where(collection, {wordClass:"noun"});
-// var allTheVerbs = _.where(collection, {wordClass:"verb"});
-
-// console.log(allTheAdjectives);
 
 
 function addWordClassClasses (filteredList) {
 	$(".all").addClass("dim"); 
 
-
-	console.log(filteredList);
 	_.each(filteredList, function(el, ix) {
 	var filteredWordClasses = $('*[data-letternumber="'+ el.letternumber + '"]').addClass(el.wordClass);
 	filteredWordClasses.removeClass("dim");
 
 	});
-
-
-	// $(allTheVerbs).addClass("verbs");
-	// $(allTheAdjectives).addClass("adjectives");
-	// $(allTheNouns).addClass("nouns");
 }
 
 
 update();
 
 function addInfo(id) {
-	//earse out with ""
-	//where?
 	var example = _.where(collection, {letternumber: id});
-	//in t
 
 }
 
-// var found = _.where(collection,)
 
-//use if statements then letternumber as id to target the different squares
-
-
-
-
-// var url = "definition" + event.target.dataset.letternumber + ".html"
-//run definition based on letter number and link out to definition.html 
-
-// console.log(event.currentTarget.id);
-// if ($(individual).hasClass("growing")) {
-
-// console.log("hello");
-// }
-
-
-
-
-//passing counterthru function 
 
 
 

@@ -518,12 +518,25 @@ function linkout(individual_datapoint) {
 	container.style.display = "none";
 	definitionPage.style.display = "inline-block";
 
-
-
 	document.body.style.backgroundColor = "#" + thething.color; 
 	var extraSpace = document.getElementById("extraSpace"); 
 	extraSpace.style.backgroundColor = "#" + thething.color; 
 
+	if (thething.color == "000000") {
+		document.body.style.color = "white";
+		var squares = document.getElementsByClassName("square"); 
+		squares[0].style.backgroundColor = "white";
+		squares[1].style.backgroundColor = "white";
+		squares[2].style.backgroundColor = "white";
+		squares[3].style.backgroundColor = "white";
+
+	}
+
+
+	// if (document.body.style.backgroundColor == "#000000") {
+	// 	document.body.style.color = "white";
+	// 	pron.style.color = "white"; 
+	// }
 		
 }
 
@@ -535,6 +548,14 @@ home.addEventListener("click", function() {
 	definitionPage.style.display = "none";
 	document.body.style.backgroundColor = "#F4F4F4"; 
 	extraSpace.style.backgroundColor = "#F4F4F4"; 
+
+	document.body.style.color = "black";
+	var squares = document.getElementsByClassName("square"); 
+	squares[0].style.backgroundColor = "black";
+	squares[1].style.backgroundColor = "black";
+	squares[2].style.backgroundColor = "black";
+	squares[3].style.backgroundColor = "black";
+
 
 	
 

@@ -206,12 +206,14 @@ img{
 .leftContainer {
 	width: 25vw;
 	margin-right: 2vw;
+	margin-left: 10.5vw;
 	float: left;
 }
 
 .righContainer {
 	width: 25vw;
 	margin-left: 2vw;
+	margin-right: 10.5vw;
 	float: left;
 }
 

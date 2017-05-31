@@ -16,13 +16,13 @@ var onloadContainer = document.getElementById("onloadContainer");
 
 
 
-setTimeout(homepageFade,5);
+// setTimeout(homepageFade,5);
 
 
-function homepageFade () {
-	onloadContainer.style.display = "none";
+// function homepageFade () {
+// 	onloadContainer.style.display = "none";
 
-}
+// }
 
 
 //MAKING ORIGINALS AND CLONES AND SETTING IMAGES FOR ORIGINALS
@@ -153,7 +153,7 @@ function mouseleavehandler(e) {
 
 		var theSecondSquare = individual.id -(-4); 
 
-		for (var i = theSecondSquare; i < 29; i+= 5) {
+		for (var i = theSecondSquare; i < 31; i+= 5) {
 			var secondCopies = document.getElementById(i + "copy");
 			$(secondCopies).addClass("show");
 			$(secondCopies).addClass("aSecondCopy");
@@ -191,7 +191,7 @@ function mouseleavehandler(e) {
 
 		var theSecondSquare = individual.id -(-3); 
 
-		for (var i = theSecondSquare; i < 29; i+= 5) {
+		for (var i = theSecondSquare; i < 31; i+= 5) {
 			var secondCopies = document.getElementById(i + "copy");
 			$(secondCopies).addClass("show");
 			$(secondCopies).addClass("aSecondCopy");
@@ -228,7 +228,7 @@ function mouseleavehandler(e) {
 
 		var theSecondSquare = individual.id -(-2); 
 
-		for (var i = theSecondSquare; i < 29; i+= 5) {
+		for (var i = theSecondSquare; i < 31; i+= 5) {
 			var secondCopies = document.getElementById(i + "copy");
 			$(secondCopies).addClass("show");
 			$(secondCopies).addClass("aSecondCopy");
@@ -320,7 +320,7 @@ function mouseleavehandler(e) {
 			$(secondOriginals).addClass("aThirdOriginal");
 		}
 
-		for (var i = theNextOneInThirdLoop; i < 29; i+= 5) {
+		for (var i = theNextOneInThirdLoop; i < 31; i+= 5) {
 			var thirdCopies = document.getElementById(i + "copy");
 			$(thirdCopies).addClass("show");
 			$(thirdCopies).addClass("aThirdCopy");

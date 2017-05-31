@@ -16,7 +16,7 @@ var onloadContainer = document.getElementById("onloadContainer");
 
 
 
-setTimeout(homepageFade,4000);
+setTimeout(homepageFade,5);
 
 
 function homepageFade () {
@@ -129,7 +129,7 @@ function clickhandler(whichcolumn, individual) {
 
 
 //MOUSELEAVEHANDLER
-function mouseleavehandler(e) {
+function mouseleavehandler(e) { 
 
 	var individual = e.target;
 	var whichcolumn = individual.id % 5; 
@@ -247,17 +247,17 @@ function mouseleavehandler(e) {
 
 		$(individual).addClass("shrinking");
 		$(individual).removeClass("growing");
-		
-
 
 	}
-
 
 	//COLUMN 4
 
 	if (whichcolumn == 4) {
-		$(individual).addClass ("shrinking");
-		$(individual).removeClass ("growing");
+
+		function individualShrink() {
+			$(individual).addClass ("shrinking");
+			$(individual).removeClass ("growing");
+		}
 
 
 		//detaching and shit
@@ -267,6 +267,7 @@ function mouseleavehandler(e) {
 
 		var theOneToTheRight = "#" + (individual.id - (-1));
 		var putBack = $(individual.id).detach();
+
 		putBack.insertBefore($(theOneToTheRight)); 
 		removedOG.insertBefore($("#" + individual.id));
 		
@@ -278,41 +279,48 @@ function mouseleavehandler(e) {
 
 		var theFirstSqaure = individual.id - 2;
 		var theSecondSquare = individual.id - 1; 
+		var theThirdSqaure = individual.id - (-1); 
+
 		var firstCopy = document.getElementById(theFirstSqaure + "copy");
 		var secondCopy = document.getElementById(theSecondSquare + "copy");
+		var thirdCopy = document.getElementById(theThirdSqaure + "copy");
+
 		var firstOriginal= document.getElementById(theFirstSqaure);
 		var secondOriginal = document.getElementById(theSecondSquare);
+		var thirdOriginal = document.getElementById(theThirdSqaure);
 
 		$(firstCopy).addClass("aFirstCopy");
 		$(secondCopy).addClass("aSecondCopy");
+		$(thirdCopy).addClass("aThirdCopy");
+
+
 		$(firstCopy).addClass("show");
 		$(secondCopy).addClass("show");
+		$(thirdCopy).addClass("show");
+
 		$(firstOriginal).addClass("aFirstOriginal");
 		$(secondOriginal).addClass("aSecondOriginal");
+		$(thirdOriginal).addClass("aThirdOriginal");
+
+
 		$(firstOriginal).addClass("hide");
 		$(secondOriginal).addClass("hide");
+		$(thirdOriginal).addClass("hide");
 
-		// for (var i = theSecondSquare; i < 29; i+=6) {
-		// 	var secondCopies = document.getElementById(i + "copy");
-		// 	$(secondCopies).addClass("show");
-		// 	$(secondCopies).addClass("aSecondCopy");
+		var theNextOneInSecondLoop = document.getElementById(secondOriginal + 6);
+		var theNextOneInThirdLoop = document.getElementById(thirdOriginal + 6);
 
-		// 	var secondOriginals = document.getElementById(i);
-		// 	$(secondOriginals).addClass("hide");
-		// 	$(secondOriginals).addClass("aSecondOriginal");
-		// }
+		for (var i = theNextOneInSecondLoop; i < 31; i+= 5) {
+			var secondCopies = document.getElementById(i + "copy");
+			$(secondCopies).addClass("show");
+			$(secondCopies).addClass("aThirdCopy");
 
+			var secondOriginals = document.getElementById(i);
+			$(secondOriginals).addClass("hide");
+			$(secondOriginals).addClass("aThirdOriginal");
+		}
 
-
-
-		var theThirdSqaure = individual.id - (-1);
-
-		var thirdCopy = document.getElementById(theThirdSqaure + "copy"); 
-		var thirdOriginal = document.getElementById(theThirdSqaure); 
-
-
-
-		for (var i = theThirdSqaure; i < 29; i+= 5) {
+		for (var i = theNextOneInThirdLoop; i < 29; i+= 5) {
 			var thirdCopies = document.getElementById(i + "copy");
 			$(thirdCopies).addClass("show");
 			$(thirdCopies).addClass("aThirdCopy");
@@ -325,47 +333,138 @@ function mouseleavehandler(e) {
 
 
 
-
-		// $(thirdCopy).addClass("show");
-		// $(thirdCopy).addClass("thirdCopy"); 
-		// $(thirdOriginal).addClass("hide");
-		// $(thirdOriginal).addClass("thirdOriginal");
-
-
 		//timeouts
+		setTimeout(individualShrink, 1200);
 		setTimeout(applyToFirstSquares, 5);
-		setTimeout(applyToSecondSquares, 5);
-		setTimeout(resetCopies, 3000);
-		setTimeout(removeClasses, 3000);
-		setTimeout(applyToThirdSquares, 1200);
+		setTimeout(applyToSecondSquares, 1200);
+		setTimeout(resetCopies, 4000);
+		setTimeout(removeClasses, 4000);
+		setTimeout(applyToThirdSquares, 2400);
+
+
+		function resetCopies() {
+			var removedFirstCopy= $(RemovedFirst).detach();
+			removedFirstCopy.insertBefore($("#" + (individual.id - 2)));
+			var removedSecondCopy= $(RemovedSecond).detach();
+			removedFirstCopy.insertBefore($("#" + (individual.id - 1)));
+ 
+
+
+		}
 	}
 
 	//COLUMN 5 
 
 
 	if (whichcolumn == 0) {
-		var firstToClose = "#" + (individual.id - 2);
-		var secondToClose = "#" + (individual.id - 1);
-
-		// console.log(firstToClose, secondToClose);
 
 		$(individual).addClass ("shrinking");
 		$(individual).removeClass ("growing");
 
-		var searchselector = "#" + (individual.id - 2) + ", #" + (individual.id - 1) ;
-		var removed = $(searchselector).detach();
-		removed.insertBefore($("#" + individual.id));
+		//detaching and shit
 
-		var theOneToTheRight = "#" + (individual.id + 1);
+		var searchselector = "#" + (individual.id - 2) + ", #" + (individual.id - 1) ;
+		var removed = $(searchselectorOG).detach();
+
+		var theOneToTheRight = "#" + (individual.id - (-1));
 		var putBack = $(individual.id).detach();
-		individual.style.boxShadow = "none";
-		putBack.insertBefore($("#" + theOneToTheRight)); 
+		putBack.insertBefore($(theOneToTheRight)); 
+		removedOG.insertBefore($("#" + individual.id));
+		
+		var removedFirst =  "#" + (individual.id - 2) + "copy"; 
+		var removedSecond =  "#" + (individual.id - 1) + "copy";
+
+		//calling the copies 
+
+
+		var theFirstSqaure = individual.id - 2;
+		var theSecondSquare = individual.id - 1; 
+		// var theThirdSqaure = individual.id - (-1); 
+
+		var firstCopy = document.getElementById(theFirstSqaure + "copy");
+		var secondCopy = document.getElementById(theSecondSquare + "copy");
+
+
+		var firstOriginal= document.getElementById(theFirstSqaure);
+		var secondOriginal = document.getElementById(theSecondSquare);
+
+
+		$(firstCopy).addClass("aFirstCopy");
+		$(secondCopy).addClass("aSecondCopy");
+
+
+
+		$(firstCopy).addClass("show");
+		$(secondCopy).addClass("show");
+
+
+		$(firstOriginal).addClass("aFirstOriginal");
+		$(secondOriginal).addClass("aSecondOriginal");
+
+
+
+		$(firstOriginal).addClass("hide");
+		$(secondOriginal).addClass("hide");
+
+		console.log(secondOriginal);
+
+
+		var theNextOneInFirstLoop = document.getElementById(firstOriginal + 6);
+		var theNextOneInSecondLoop = document.getElementById(secondOriginal + 6);
+
+		for (var i = theNextOneInFirstLoop; i < 31; i+= 5) {
+			var firstCopies = document.getElementById(i + "copy");
+			$(firstCopies).addClass("show");
+			$(firstCopies).addClass("aFirstCopy");
+
+			var firstOriginals = document.getElementById(i);
+			$(firstOriginals).addClass("hide");
+			$(firstOriginals).addClass("aFirstOriginal");
+		}
+
+		for (var i = theNextOneInSecondLoop; i < 31; i+= 5) {
+			var secondCopies = document.getElementById(i + "copy");
+			$(secondCopies).addClass("show");
+			$(secondCopies).addClass("aSecondCopy");
+
+			var secondOriginals = document.getElementById(i);
+			$(secondOriginals).addClass("hide");
+			$(secondOriginals).addClass("aSecondOriginal");
+		}
+
+
+
+
+		//timeouts
+		// setTimeout(individualShrink, 1200);
+		setTimeout(applyToFirstSquares, 5);
+		setTimeout(applyToSecondSquares, 1200);
+		setTimeout(resetCopies, 2500);
+		setTimeout(removeClasses, 2500);
+		// setTimeout(applyToThirdSquares, 2400);
+
+
+		function resetCopies() {
+			var removedFirstCopy= $(removedFirst).detach();
+			removedFirstCopy.insertAfter($("#" + (individual.id - (-3))));
+			var removedSecondCopy= $(removedSecond).detach();
+			removedFirstCopy.insertBefore($("#" + (individual.id)));
+ 
+
+
+		}
 
 	}
 
 
+
+
 }
 
+
+
+
+//where are the copies going
 
 
 
@@ -425,8 +524,6 @@ function linkout(individual_datapoint) {
 	var extraSpace = document.getElementById("extraSpace"); 
 	extraSpace.style.backgroundColor = "#" + thething.color; 
 
-
-	console.log(thething);
 		
 }
 
@@ -452,8 +549,11 @@ function removeClasses() {
 	$(".aFirstOriginal").removeClass("squaregrow hide aFirstOriginal");
 	$(".aSecondOriginal").removeClass("squaregrow hide aSecondOriginal");
 	$(".aSecondCopy").removeClass("squareshrink show aSecondCopy");
-	$(".thirdOriginal").removeClass("squaregrow hide aSecondOriginal");
-	$(".thirdCopy").removeClass("squareshrink show aSecondCopy");
+	$(".athirdOriginal").removeClass("squaregrow hide aThirdOriginal");
+	$(".athirdCopy").removeClass("squareshrink show aThirdCopy");
+	// $(individual).removeClass ("shrinking");
+	// $(individual).removeClass ("growing");
+	$(".shrinking").removeClass ("shrinking");
 }
 
 function applyToFirstSquares() {
@@ -473,13 +573,7 @@ function applyToThirdSquares() {
 	
 }
 
-function resetCopies() {
-	var removedFirstCopy= $(RemovedFirst).detach();
-	removedFirstCopy.insertBefore($("#" + (individual.id - 2)));
-	var removedSecondCopy= $(RemovedSecond).detach();
-	removedFirstCopy.insertBefore($("#" + (individual.id - 1)));
- 
-}
+
 
 var filterSelect = document.getElementById("filterSelect");
 var filterMode = "all";
